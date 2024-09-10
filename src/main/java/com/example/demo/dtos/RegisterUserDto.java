@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class RegisterUserDto {
 
     private String email;
-    private String password;
+    private String studentPassword;
     private String name;
     private String studentDepartment;
 }

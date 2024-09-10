@@ -30,7 +30,7 @@ public class AuthenticationService {
         student.setStudentEmail(input.getEmail());
         student.setStudentName(input.getName());
         student.setStudentDepartment(input.getStudentDepartment());
-        student.setStudentPassword(passwordEncoder.encode(input.getPassword()));
+        student.setStudentPassword(passwordEncoder.encode(input.getStudentPassword()));
 
         return studentRepository.save(student);
     }

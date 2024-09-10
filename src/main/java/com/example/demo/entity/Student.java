@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 // Importing required classes
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,6 +37,8 @@ public class Student implements UserDetails {
     private String studentEmail;
 
     @Column(nullable = false)
+
+    @JsonIgnore
     private String studentPassword;
 
     @Column(nullable = false)

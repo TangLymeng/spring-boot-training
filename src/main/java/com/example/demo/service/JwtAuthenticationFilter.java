@@ -54,7 +54,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
             filterChain.doFilter(request, response);
         } catch (Exception e){
-            System.out.println(e.getMessage());
+            // response status code 4xx if token is invalid
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.getWriter().write("Invalid token: " + e.getMessage());
         }
     }
 }
