@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 // Importing required classes
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -41,9 +42,6 @@ public class Student implements UserDetails {
     @JsonIgnore
     private String studentPassword;
 
-    @Column(nullable = false)
-    private String studentDepartment;
-
     @CreationTimestamp
     @Column(updatable = false, name = "created_at")
     private Date createdAt;
@@ -51,6 +49,11 @@ public class Student implements UserDetails {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private Date updatedAt;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "department_id", nullable = false)
+    @JsonBackReference // to avoid infinite loop
+    private Department department;
 
     // getAuthorities method returns the user's roles list, it helpful to manage permissions
     @Override
