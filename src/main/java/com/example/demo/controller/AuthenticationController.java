@@ -6,7 +6,9 @@ import com.example.demo.dtos.RegisterUserDto;
 import com.example.demo.entity.Student;
 import com.example.demo.service.AuthenticationService;
 import com.example.demo.service.JwtService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/auth")
 @RestController
+@Validated
 public class AuthenticationController {
     private final JwtService jwtService;
     private final AuthenticationService authenticationService;
@@ -25,13 +28,13 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<Student> register(@RequestBody RegisterUserDto registerUserDto) {
+    public ResponseEntity<Student> register(@Valid @RequestBody RegisterUserDto registerUserDto) {
         Student student = authenticationService.signup(registerUserDto);
         return ResponseEntity.ok(student);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponse> authenticate(@RequestBody LoginUserDto loginUserDto) {
+    public ResponseEntity<LoginResponse> authenticate(@Valid @RequestBody LoginUserDto loginUserDto) {
         Student authenticatedUser = authenticationService.authenticate(loginUserDto);
 
         String jwtToken = jwtService.generateToken(authenticatedUser);
