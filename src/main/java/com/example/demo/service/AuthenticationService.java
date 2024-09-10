@@ -46,4 +46,9 @@ public class AuthenticationService {
         return studentRepository.findByStudentEmail(input.getEmail())
                 .orElseThrow();
     }
+
+    public boolean emailExists(String email) {
+        // Implement the logic to check if the email exists in the database
+        return studentRepository.findByStudentEmail(email).isPresent();
+    }
 }
