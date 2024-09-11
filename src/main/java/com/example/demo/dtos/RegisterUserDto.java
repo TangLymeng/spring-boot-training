@@ -26,6 +26,7 @@ public class RegisterUserDto {
     @NotEmpty(message = "Name cannot be empty")
     @Size(min = 3, message = "Name should be at least 3 characters")
     private String name;
-    private String studentDepartment;
+
+    private long studentDepartment;
 
 }

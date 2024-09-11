@@ -17,11 +17,13 @@ public class AuthenticationService {
 
     private final AuthenticationManager authenticationManager;
 
+    private final DepartmentService departmentService;
     // Constructor
-    public AuthenticationService(StudentRepository studentRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager) {
+    public AuthenticationService(StudentRepository studentRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, DepartmentService departmentService) {
         this.studentRepository = studentRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
+        this.departmentService = departmentService;
     }
 
     public Student signup(RegisterUserDto input) {
@@ -29,7 +31,7 @@ public class AuthenticationService {
         Student student = new Student();
         student.setStudentEmail(input.getEmail());
         student.setStudentName(input.getName());
-//        student.setStudentDepartment(input.getStudentDepartment());
+        student.setDepartment(departmentService.getDepartmentById(input.getStudentDepartment()).orElseThrow());
         student.setStudentPassword(passwordEncoder.encode(input.getStudentPassword()));
 
         return studentRepository.save(student);

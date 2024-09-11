@@ -28,9 +28,9 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<?> register(@Valid @RequestBody RegisterUserDto registerUserDto) {
+    public ResponseEntity<Student> register(@Valid @RequestBody RegisterUserDto registerUserDto) {
         if (authenticationService.emailExists(registerUserDto.getEmail())) {
-            return ResponseEntity.badRequest().body("Email is already in use");
+            throw new RuntimeException("Email already exists");
         }
         Student student = authenticationService.signup(registerUserDto);
         return ResponseEntity.ok(student);
