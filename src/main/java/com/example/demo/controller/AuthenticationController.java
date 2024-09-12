@@ -2,17 +2,16 @@ package com.example.demo.controller;
 
 import com.example.demo.responses.LoginResponse;
 import com.example.demo.dtos.LoginUserDto;
-import com.example.demo.dtos.RegisterUserDto;
+import com.example.demo.dtos.RegisterUserWithImageDto;
 import com.example.demo.entity.Student;
 import com.example.demo.service.AuthenticationService;
 import com.example.demo.service.JwtService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 
 @RequestMapping("/auth")
 @RestController
@@ -27,13 +26,22 @@ public class AuthenticationController {
         this.authenticationService = authenticationService;
     }
 
-    @PostMapping("/signup")
-    public ResponseEntity<Student> register(@Valid @RequestBody RegisterUserDto registerUserDto) {
-        if (authenticationService.emailExists(registerUserDto.getEmail())) {
+    @PostMapping(value = "/signup", consumes = "multipart/form-data")
+    public ResponseEntity<Student> register(@Valid @ModelAttribute RegisterUserWithImageDto registerUserWithImageDto) {
+        if (authenticationService.emailExists(registerUserWithImageDto.getEmail())) {
             throw new RuntimeException("Email already exists");
         }
-        Student student = authenticationService.signup(registerUserDto);
-        return ResponseEntity.ok(student);
+        try {
+            // Handle the file upload and set the URL
+            String imageUrl = authenticationService.uploadImage(registerUserWithImageDto.getImageFile());
+            registerUserWithImageDto.setStudentImageUrl(imageUrl);
+
+            // Proceed with the registration process
+            Student student = authenticationService.signup(registerUserWithImageDto);
+            return ResponseEntity.ok(student);
+        } catch (IOException e) {
+            throw new RuntimeException("Image upload failed", e);
+        }
     }
 
     @PostMapping("/login")

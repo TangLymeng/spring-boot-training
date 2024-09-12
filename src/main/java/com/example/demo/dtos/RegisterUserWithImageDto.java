@@ -7,13 +7,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.security.core.userdetails.User;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterUserDto {
+public class RegisterUserWithImageDto {
 
     @NotEmpty(message = "Email cannot be empty")
     @Email(message = "Email should be valid")
@@ -27,6 +27,9 @@ public class RegisterUserDto {
     @Size(min = 3, message = "Name should be at least 3 characters")
     private String name;
 
+    private String studentImageUrl;
+
     private long studentDepartment;
 
+    private MultipartFile imageFile;
 }

@@ -38,7 +38,9 @@ public class Student implements UserDetails {
     private String studentEmail;
 
     @Column(nullable = false)
+    private String studentImageUrl;
 
+    @Column(nullable = false)
     @JsonIgnore
     private String studentPassword;
 
