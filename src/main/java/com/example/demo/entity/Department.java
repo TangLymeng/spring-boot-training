@@ -36,4 +36,13 @@ public class Department {
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Student> students = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "Department{" +
+                "id=" + departmentId +
+                ", name='" + departmentName + '\'' +
+                // Avoid including fields that could cause recursion
+                '}';
+    }
+
 }

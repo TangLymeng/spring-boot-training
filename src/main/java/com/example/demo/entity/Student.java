@@ -93,4 +93,13 @@ public class Student implements UserDetails {
     public boolean isEnabled() {
         return UserDetails.super.isEnabled();
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + studentId +
+                ", name='" + studentName + '\'' +
+                // Avoid including relationships that could cause recursion
+                '}';
+    }
 }
