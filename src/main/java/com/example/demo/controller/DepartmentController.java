@@ -17,7 +17,8 @@ import java.util.Optional;
 @RestController
 public class DepartmentController {
 
-    @Autowired private DepartmentService departmentService;
+    @Autowired
+    private DepartmentService departmentService;
 
     // save operation
     @PostMapping("/departments")

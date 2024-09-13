@@ -14,7 +14,8 @@ import java.util.Optional;
 @RestController
 public class StudentController {
 
-    @Autowired private StudentService studentService;
+    @Autowired
+    private StudentService studentService;
 
     // update operation by id
     @PutMapping("/students/{id}")
@@ -32,8 +33,7 @@ public class StudentController {
     @GetMapping("/students/{id}")
     public ResponseEntity<Student> getById(@PathVariable("id") Long studentId) {
         Optional<Student> student = studentService.getStudentById(studentId);
-        return student.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
+        return student.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 
     // delete operation by id
@@ -43,5 +43,3 @@ public class StudentController {
         return "Deleted Successfully";
     }
 }
-
-

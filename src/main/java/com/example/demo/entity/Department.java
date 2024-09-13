@@ -4,6 +4,7 @@
 package com.example.demo.entity;
 
 // Importing required classes
+
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -44,5 +45,4 @@ public class Department {
                 // Avoid including fields that could cause recursion
                 '}';
     }
-
 }
