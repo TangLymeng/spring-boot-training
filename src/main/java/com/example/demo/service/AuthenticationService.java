@@ -2,8 +2,10 @@ package com.example.demo.service;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
+import com.example.demo.dtos.DepartmentDTO;
 import com.example.demo.dtos.LoginUserDto;
 import com.example.demo.dtos.RegisterUserWithImageDto;
+import com.example.demo.entity.Department;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +53,19 @@ public class AuthenticationService {
         Student student = new Student();
         student.setStudentEmail(input.getEmail());
         student.setStudentName(input.getName());
-        student.setDepartment(departmentService.getDepartmentById(input.getStudentDepartment()).orElseThrow());
+
+        // Retrieve the department using the DepartmentService
+        DepartmentDTO departmentDTO = departmentService.getDepartmentById(input.getStudentDepartment())
+                .orElseThrow(() -> new RuntimeException("Department not found for id: " + input.getStudentDepartment()));
+
+        // Set the department in the student entity
+        Department department = new Department(); // Create a new Department instance
+        department.setDepartmentId(departmentDTO.getId());
+        department.setDepartmentName(departmentDTO.getName());
+        department.setDepartmentAddress(departmentDTO.getAddress());
+        department.setDepartmentCode(departmentDTO.getCode());
+
+        student.setDepartment(department);
         student.setStudentPassword(passwordEncoder.encode(input.getStudentPassword()));
         student.setStudentImageUrl(imageUrl);
 

@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Department;
+import com.example.demo.dtos.DepartmentDTO;
 import com.example.demo.service.DepartmentService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
@@ -20,12 +20,12 @@ public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
 
-    // save operation
+    // Save operation
     @PostMapping("/departments")
-    public ResponseEntity<Map<String, Object>> saveDepartment(@Valid @RequestBody Department department) {
+    public ResponseEntity<Map<String, Object>> saveDepartment(@Valid @RequestBody DepartmentDTO departmentDTO) {
         Map<String, Object> response = new HashMap<>();
         try {
-            Department savedDepartment = departmentService.saveDepartment(department);
+            DepartmentDTO savedDepartment = departmentService.saveDepartment(departmentDTO);
             response.put("status", "success");
             response.put("message", "Department saved successfully");
             response.put("data", savedDepartment);
@@ -37,12 +37,12 @@ public class DepartmentController {
         }
     }
 
-    // read operation
+    // Read operation
     @GetMapping("/departments")
     public ResponseEntity<Map<String, Object>> fetchDepartmentList() {
         Map<String, Object> response = new HashMap<>();
         try {
-            List<Department> departments = departmentService.fetchDepartmentList();
+            List<DepartmentDTO> departments = departmentService.fetchDepartmentList();
             response.put("status", "success");
             response.put("message", "Departments fetched successfully");
             response.put("data", departments);
@@ -54,64 +54,55 @@ public class DepartmentController {
         }
     }
 
-    // read operation by id
+    // Read operation by id
     @GetMapping("/departments/{id}")
-    public ResponseEntity<Object> getById(@Positive @PathVariable("id") Long departmentId) {
-        Optional<Department> department = departmentService.getDepartmentById(departmentId);
-        return department.<ResponseEntity<Object>>map(ResponseEntity::ok)
+    public ResponseEntity<Map<String, Object>> getById(@Positive @PathVariable("id") Long departmentId) {
+        Map<String, Object> response = new HashMap<>();
+        Optional<DepartmentDTO> departmentDTO = departmentService.getDepartmentById(departmentId);
+        return departmentDTO.map(dep -> {
+                    response.put("status", "success");
+                    response.put("message", "Department fetched successfully");
+                    response.put("data", dep);
+                    return new ResponseEntity<>(response, HttpStatus.OK);
+                })
                 .orElseGet(() -> {
-                    Map<String, Object> response = new HashMap<>();
                     response.put("status", HttpStatus.NOT_FOUND.value());
                     response.put("message", "Department not found with id: " + departmentId);
                     return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
                 });
     }
 
-    // delete operation by id
+    // Delete operation by id
     @DeleteMapping("/departments/{id}")
     public ResponseEntity<Map<String, Object>> deleteDepartmentById(@Positive @PathVariable("id") Long departmentId) {
         Map<String, Object> response = new HashMap<>();
-        Optional<Department> department = departmentService.getDepartmentById(departmentId);
-        if (department.isPresent()) {
-            try {
-                departmentService.DeleteDepartmentById(departmentId);
-                response.put("status", "success");
-                response.put("message", "Deleted Successfully");
-                return new ResponseEntity<>(response, HttpStatus.OK);
-            } catch (Exception e) {
-                response.put("status", "fail");
-                response.put("message", "Failed to delete department with id: " + departmentId);
-                return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        } else {
+        try {
+            departmentService.deleteDepartmentById(departmentId);
+            response.put("status", "success");
+            response.put("message", "Deleted Successfully");
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
             response.put("status", "fail");
-            response.put("message", "Department not found with id: " + departmentId);
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            response.put("message", "Failed to delete department with id: " + departmentId);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-    // update operation by id
+    // Update operation by id
     @PutMapping("/departments/{id}")
-    public ResponseEntity<Map<String, Object>> updateDepartment(@Positive @PathVariable("id") Long departmentId, @RequestBody Department department) {
+    public ResponseEntity<Map<String, Object>> updateDepartment(@Positive @PathVariable("id") Long departmentId,
+                                                                @RequestBody DepartmentDTO departmentDTO) {
         Map<String, Object> response = new HashMap<>();
-        Optional<Department> departmentDb = departmentService.getDepartmentById(departmentId);
-        if (departmentDb.isPresent()) {
-            try {
-                Department updatedDepartment = departmentService.updateDepartment(department, departmentId);
-                response.put("status", "success");
-                response.put("message", "Department updated successfully");
-                response.put("data", updatedDepartment);
-                return new ResponseEntity<>(response, HttpStatus.OK);
-            } catch (Exception e) {
-                response.put("status", "fail");
-                response.put("message", "Failed to update department");
-                return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-            }
-        } else {
+        try {
+            DepartmentDTO updatedDepartment = departmentService.updateDepartment(departmentDTO, departmentId);
+            response.put("status", "success");
+            response.put("message", "Department updated successfully");
+            response.put("data", updatedDepartment);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
             response.put("status", "fail");
-            response.put("message", "Department not found with id: " + departmentId);
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            response.put("message", "Failed to update department");
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
 }

@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.dtos.DepartmentDTO;
 import com.example.demo.entity.Department;
 import com.example.demo.repository.DepartmentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,50 +8,65 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
-public class DepartmentServiceImpl implements DepartmentService{
+public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
     private DepartmentRepository departmentRepository;
 
-    // save
+    // Save
     @Override
-    public Department saveDepartment(Department department) {
-        return departmentRepository.save(department);
+    public DepartmentDTO saveDepartment(DepartmentDTO departmentDTO) {
+        Department department = new Department();
+        department.setDepartmentName(departmentDTO.getName());
+        department.setDepartmentAddress(departmentDTO.getAddress());
+        department.setDepartmentCode(departmentDTO.getCode());
+
+        Department savedDepartment = departmentRepository.save(department);
+        return convertToDTO(savedDepartment);
     }
 
-    // update department by id
+    // Update
     @Override
-    public Department updateDepartment(Department department, Long departmentId) {
-        Department depDB = departmentRepository.findById(departmentId).get();
-        if (department.getDepartmentName() != null) {
-            depDB.setDepartmentName(department.getDepartmentName());
+    public DepartmentDTO updateDepartment(DepartmentDTO departmentDTO, Long departmentId) {
+        Department depDB = departmentRepository.findById(departmentId).orElseThrow();
+        depDB.setDepartmentName(departmentDTO.getName());
+        depDB.setDepartmentAddress(departmentDTO.getAddress());
+        depDB.setDepartmentCode(departmentDTO.getCode());
+
+        Department updatedDepartment = departmentRepository.save(depDB);
+        return convertToDTO(updatedDepartment);
+    }
+
+    // Fetch all departments
+    @Override
+    public List<DepartmentDTO> fetchDepartmentList() {
+        return departmentRepository.findAll().stream()
+                .map(this::convertToDTO)
+                .collect(Collectors.toList());
+    }
+
+    // Delete
+    @Override
+    public void deleteDepartmentById(Long departmentId) {
+        if (!departmentRepository.existsById(departmentId)) {
+            throw new IllegalArgumentException("Department not found with id: " + departmentId);
         }
-        if (department.getDepartmentCode() != null) {
-            depDB.setDepartmentCode(department.getDepartmentCode());
-        }
-        if (department.getDepartmentAddress() != null) {
-            depDB.setDepartmentAddress(department.getDepartmentAddress());
-        }
-        return departmentRepository.save(depDB);
+        departmentRepository.deleteById(departmentId);
     }
 
-    // get department
+    // Get by ID
     @Override
-    public List<Department> fetchDepartmentList() {
-        return (List<Department>) departmentRepository.findAll();
+    public Optional<DepartmentDTO> getDepartmentById(Long departmentId) {
+        return departmentRepository.findById(departmentId)
+                .map(this::convertToDTO);
     }
 
-    // delete
-    @Override
-    public void DeleteDepartmentById(Long DepartmentById) {
-        departmentRepository.deleteById(DepartmentById);
+    // Helper method to convert Department to DepartmentDTO
+    private DepartmentDTO convertToDTO(Department department) {
+        return new DepartmentDTO(department.getDepartmentId(), department.getDepartmentName(),
+                department.getDepartmentAddress(), department.getDepartmentCode());
     }
-
-    @Override
-    public Optional<Department> getDepartmentById(Long DepartmentById) {
-        return departmentRepository.findById(DepartmentById);
-    }
-
 }
