@@ -1,13 +1,22 @@
 package com.example.demo.dtos;
 
 import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class DepartmentDTO {
     private Long id;
     private String name;
     private String address;
     private String code;
     private List<StudentDTO> students;
+    private List<CourseDTO> courses;
 
     // Getters and Setters
     public Long getId() {
@@ -50,6 +59,14 @@ public class DepartmentDTO {
         this.students = students;
     }
 
+    public List<CourseDTO> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<CourseDTO> courses) {
+        this.courses = courses;
+    }
+
     @Override
     public String toString() {
         return "DepartmentDTO{" +
@@ -58,7 +75,7 @@ public class DepartmentDTO {
                 ", address='" + address + '\'' +
                 ", code='" + code + '\'' +
                 ", students=" + students +
+                ", courses=" + courses +
                 '}';
     }
-
 }

@@ -1807,3 +1807,603 @@
 2024-09-16 11:16:54 - Outgoing response for: GET /students/1602
 2024-09-16 11:16:54 - Response Status: 200 OK
 2024-09-16 11:16:54 - Response Body: ResponseWrapper{status='success', message='Student fetched successfully', data=StudentDTO{id=1602, name='jhondoen7777', email='jhonDoe7777@gmail.com', departmentCode='453'}}
+2024-09-16 13:49:53 - Starting DemoApplication using Java 21.0.4 with PID 83536 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 13:49:53 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 13:49:53 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 13:49:53 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 13:49:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 13:49:53 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-16 13:49:53 - Tomcat initialized with port 8080 (http)
+2024-09-16 13:49:53 - Starting service [Tomcat]
+2024-09-16 13:49:53 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 13:49:53 - Initializing Spring embedded WebApplicationContext
+2024-09-16 13:49:53 - Root WebApplicationContext: initialization completed in 635 ms
+2024-09-16 13:49:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 13:49:54 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 13:49:54 - HHH000026: Second-level cache disabled
+2024-09-16 13:49:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 13:49:54 - HikariPool-1 - Starting...
+2024-09-16 13:49:54 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b08931f
+2024-09-16 13:49:54 - HikariPool-1 - Start completed.
+2024-09-16 13:49:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 13:49:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 13:49:55 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 13:49:55 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 13:49:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 13:49:55 - LiveReload server is running on port 35729
+2024-09-16 13:49:55 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 13:49:55 - Started DemoApplication in 2.345 seconds (process running for 2.569)
+2024-09-16 13:49:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 13:49:58 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 13:49:58 - Completed initialization in 1 ms
+2024-09-16 13:49:58 - Incoming request: POST /courses
+2024-09-16 13:49:58 - Request Headers: {content-length=29, postman-token=c33ce040-0857-464b-ac72-848f2e941595, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 13:49:58 - Request Params: None
+2024-09-16 13:49:58 - SQL Error: 1364, SQLState: HY000
+2024-09-16 13:49:58 - Field 'course_code' doesn't have a default value
+2024-09-16 13:54:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 13:54:30 - HikariPool-1 - Shutdown initiated...
+2024-09-16 13:54:30 - HikariPool-1 - Shutdown completed.
+2024-09-16 13:54:32 - Starting DemoApplication using Java 21.0.4 with PID 83976 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 13:54:32 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 13:54:32 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 13:54:32 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 13:54:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 13:54:32 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-16 13:54:32 - Tomcat initialized with port 8080 (http)
+2024-09-16 13:54:32 - Starting service [Tomcat]
+2024-09-16 13:54:32 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 13:54:32 - Initializing Spring embedded WebApplicationContext
+2024-09-16 13:54:32 - Root WebApplicationContext: initialization completed in 643 ms
+2024-09-16 13:54:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 13:54:32 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 13:54:32 - HHH000026: Second-level cache disabled
+2024-09-16 13:54:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 13:54:33 - HikariPool-1 - Starting...
+2024-09-16 13:54:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c29716f
+2024-09-16 13:54:33 - HikariPool-1 - Start completed.
+2024-09-16 13:54:33 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 13:54:33 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 13:54:33 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 13:54:33 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 13:54:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 13:54:34 - LiveReload server is running on port 35729
+2024-09-16 13:54:34 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 13:54:34 - Started DemoApplication in 2.272 seconds (process running for 2.492)
+2024-09-16 13:54:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 13:54:38 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 13:54:38 - Completed initialization in 1 ms
+2024-09-16 13:54:38 - Incoming request: POST /courses
+2024-09-16 13:54:38 - Request Headers: {content-length=29, postman-token=e82889d7-f67a-4921-b77f-01a2e55c3802, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 13:54:38 - Request Params: None
+2024-09-16 13:54:38 - SQL Error: 1364, SQLState: HY000
+2024-09-16 13:54:38 - Field 'course_code' doesn't have a default value
+2024-09-16 13:54:39 - Incoming request: POST /courses
+2024-09-16 13:54:39 - Request Headers: {content-length=29, postman-token=b4d82999-cb72-4ba4-8095-a934122021d5, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 13:54:39 - Request Params: None
+2024-09-16 13:54:39 - SQL Error: 1364, SQLState: HY000
+2024-09-16 13:54:39 - Field 'course_code' doesn't have a default value
+2024-09-16 13:58:19 - Incoming request: POST /courses
+2024-09-16 13:58:19 - Request Headers: {content-length=55, postman-token=14ef7a69-0df2-438b-ad30-71f57aabe54c, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 13:58:19 - Request Params: None
+2024-09-16 13:58:19 - SQL Error: 1364, SQLState: HY000
+2024-09-16 13:58:19 - Field 'course_code' doesn't have a default value
+2024-09-16 13:58:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 13:58:29 - HikariPool-1 - Shutdown initiated...
+2024-09-16 13:58:29 - HikariPool-1 - Shutdown completed.
+2024-09-16 13:58:31 - Starting DemoApplication using Java 21.0.4 with PID 84367 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 13:58:31 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 13:58:31 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 13:58:31 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 13:58:31 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 13:58:31 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-16 13:58:31 - Tomcat initialized with port 8080 (http)
+2024-09-16 13:58:31 - Starting service [Tomcat]
+2024-09-16 13:58:31 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 13:58:31 - Initializing Spring embedded WebApplicationContext
+2024-09-16 13:58:31 - Root WebApplicationContext: initialization completed in 636 ms
+2024-09-16 13:58:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 13:58:32 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 13:58:32 - HHH000026: Second-level cache disabled
+2024-09-16 13:58:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 13:58:32 - HikariPool-1 - Starting...
+2024-09-16 13:58:32 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cd658c9
+2024-09-16 13:58:32 - HikariPool-1 - Start completed.
+2024-09-16 13:58:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 13:58:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 13:58:32 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 13:58:32 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 13:58:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 13:58:33 - LiveReload server is running on port 35729
+2024-09-16 13:58:33 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 13:58:33 - Started DemoApplication in 2.261 seconds (process running for 2.484)
+2024-09-16 13:58:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 13:58:36 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 13:58:36 - Completed initialization in 1 ms
+
+
+
+2024-09-16 14:00:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:00:17 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:00:17 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:00:18 - Starting DemoApplication using Java 21.0.4 with PID 84530 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:00:18 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:00:18 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:00:18 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:00:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:00:19 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:00:19 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:00:19 - Starting service [Tomcat]
+2024-09-16 14:00:19 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:00:19 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:00:19 - Root WebApplicationContext: initialization completed in 611 ms
+2024-09-16 14:00:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:00:19 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:00:19 - HHH000026: Second-level cache disabled
+2024-09-16 14:00:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:00:19 - HikariPool-1 - Starting...
+2024-09-16 14:00:19 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36c20e07
+2024-09-16 14:00:19 - HikariPool-1 - Start completed.
+2024-09-16 14:00:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:00:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:00:20 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:00:20 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:00:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:00:20 - LiveReload server is running on port 35729
+2024-09-16 14:00:20 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:00:20 - Started DemoApplication in 2.244 seconds (process running for 2.449)
+2024-09-16 14:00:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:00:24 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:00:24 - Completed initialization in 2 ms
+2024-09-16 14:09:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:09:23 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:09:23 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:09:25 - Starting DemoApplication using Java 21.0.4 with PID 85257 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:09:25 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:09:25 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:09:25 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:09:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:09:25 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:09:25 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:09:25 - Starting service [Tomcat]
+2024-09-16 14:09:25 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:09:25 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:09:25 - Root WebApplicationContext: initialization completed in 602 ms
+2024-09-16 14:09:25 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:09:25 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:09:25 - HHH000026: Second-level cache disabled
+2024-09-16 14:09:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:09:25 - HikariPool-1 - Starting...
+2024-09-16 14:09:26 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62e959aa
+2024-09-16 14:09:26 - HikariPool-1 - Start completed.
+2024-09-16 14:09:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:09:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:09:26 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:09:26 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:09:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:09:27 - LiveReload server is running on port 35729
+2024-09-16 14:09:27 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:09:27 - Started DemoApplication in 2.191 seconds (process running for 2.406)
+2024-09-16 14:12:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:12:08 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:12:08 - Completed initialization in 2 ms
+2024-09-16 14:12:42 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:12:42 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:12:42 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:12:44 - Starting DemoApplication using Java 21.0.4 with PID 85560 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:12:44 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:12:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:12:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:12:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:12:44 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:12:45 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:12:45 - Starting service [Tomcat]
+2024-09-16 14:12:45 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:12:45 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:12:45 - Root WebApplicationContext: initialization completed in 610 ms
+2024-09-16 14:12:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:12:45 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:12:45 - HHH000026: Second-level cache disabled
+2024-09-16 14:12:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:12:45 - HikariPool-1 - Starting...
+2024-09-16 14:12:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f460a6
+2024-09-16 14:12:45 - HikariPool-1 - Start completed.
+2024-09-16 14:12:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:12:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:12:46 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:12:46 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:12:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:12:46 - LiveReload server is running on port 35729
+2024-09-16 14:12:46 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:12:46 - Started DemoApplication in 2.177 seconds (process running for 2.377)
+2024-09-16 14:12:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:12:57 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:12:57 - Completed initialization in 1 ms
+2024-09-16 14:12:57 - Incoming request: POST /courses
+2024-09-16 14:12:57 - Request Headers: {content-length=76, postman-token=0adf976c-4b0d-42a6-a375-a911b774bb54, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:12:57 - Request Params: None
+2024-09-16 14:12:57 - Outgoing response for: POST /courses
+2024-09-16 14:12:57 - Response Status: 201 CREATED
+2024-09-16 14:12:57 - Response Body: CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}
+2024-09-16 14:13:30 - Incoming request: POST /auth/login
+2024-09-16 14:13:30 - Request Headers: {content-length=61, postman-token=d0504ada-143a-4490-90eb-43135ec13243, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:13:30 - Request Params: None
+2024-09-16 14:13:30 - Outgoing response for: POST /auth/login
+2024-09-16 14:13:30 - Response Status: 200 OK
+2024-09-16 14:13:30 - Response Body: com.example.demo.responses.LoginResponse@5d27cb1c
+2024-09-16 14:13:47 - Incoming request: GET /departments
+2024-09-16 14:13:47 - Request Headers: {content-length=97, postman-token=07fef77d-ee46-4693-b694-be063b0b1d85, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:13:47 - Request Params: None
+2024-09-16 14:13:47 - Outgoing response for: GET /departments
+2024-09-16 14:13:47 - Response Status: 200 OK
+2024-09-16 14:13:47 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}]}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen7777', email='jhonDoe7777@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}]}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[]}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[]}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[]}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[]}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[]}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[]}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[]}, DepartmentDTO{id=1052, name='DOS', address='russian federation', code='390', students=[]}]}
+2024-09-16 14:16:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:16:17 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:16:17 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:16:19 - Starting DemoApplication using Java 21.0.4 with PID 85876 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:16:19 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:16:19 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:16:19 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:16:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:16:19 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:16:19 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:16:19 - Starting service [Tomcat]
+2024-09-16 14:16:19 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:16:19 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:16:19 - Root WebApplicationContext: initialization completed in 596 ms
+2024-09-16 14:16:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:16:19 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:16:19 - HHH000026: Second-level cache disabled
+2024-09-16 14:16:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:16:19 - HikariPool-1 - Starting...
+2024-09-16 14:16:20 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@397be91c
+2024-09-16 14:16:20 - HikariPool-1 - Start completed.
+2024-09-16 14:16:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:16:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:16:20 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:16:20 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:16:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:16:20 - LiveReload server is running on port 35729
+2024-09-16 14:16:20 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:16:20 - Started DemoApplication in 2.111 seconds (process running for 2.305)
+2024-09-16 14:16:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:16:24 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:16:24 - Completed initialization in 1 ms
+2024-09-16 14:16:24 - Incoming request: GET /departments
+2024-09-16 14:16:24 - Request Headers: {content-length=97, postman-token=66bfc140-d8e6-484f-b0d6-4f5e60558ec6, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:16:24 - Request Params: None
+2024-09-16 14:16:24 - Outgoing response for: GET /departments
+2024-09-16 14:16:24 - Response Status: 200 OK
+2024-09-16 14:16:24 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}], courses=null}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen7777', email='jhonDoe7777@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}], courses=null}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[], courses=null}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[], courses=null}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[], courses=null}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[], courses=null}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[], courses=null}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[], courses=null}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[], courses=null}, DepartmentDTO{id=1052, name='DOS', address='russian federation', code='390', students=[], courses=null}]}
+2024-09-16 14:22:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:22:12 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:22:12 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:22:14 - Starting DemoApplication using Java 21.0.4 with PID 86353 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:22:14 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:22:14 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:22:14 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:22:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:22:14 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:22:15 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:22:15 - Starting service [Tomcat]
+2024-09-16 14:22:15 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:22:15 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:22:15 - Root WebApplicationContext: initialization completed in 602 ms
+2024-09-16 14:22:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:22:15 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:22:15 - HHH000026: Second-level cache disabled
+2024-09-16 14:22:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:22:15 - HikariPool-1 - Starting...
+2024-09-16 14:22:15 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31eaf45a
+2024-09-16 14:22:15 - HikariPool-1 - Start completed.
+2024-09-16 14:22:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:22:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:22:16 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:22:16 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:22:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:22:16 - LiveReload server is running on port 35729
+2024-09-16 14:22:16 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:22:16 - Started DemoApplication in 2.159 seconds (process running for 2.356)
+2024-09-16 14:22:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:22:19 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:22:19 - Completed initialization in 1 ms
+2024-09-16 14:22:19 - Incoming request: GET /departments
+2024-09-16 14:22:19 - Request Headers: {content-length=97, postman-token=68849d76-ac5e-44a2-aa3d-826bd3c1b5e5, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:22:19 - Request Params: None
+2024-09-16 14:22:19 - Outgoing response for: GET /departments
+2024-09-16 14:22:19 - Response Status: 200 OK
+2024-09-16 14:22:19 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}], courses=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}]}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen7777', email='jhonDoe7777@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}], courses=[]}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[], courses=[]}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[], courses=[]}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[], courses=[]}, DepartmentDTO{id=1052, name='DOS', address='russian federation', code='390', students=[], courses=[]}]}
+2024-09-16 14:30:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:30:13 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:30:13 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:30:14 - Starting DemoApplication using Java 21.0.4 with PID 87003 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:30:14 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:30:14 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:30:14 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:30:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:30:14 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:30:15 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:30:15 - Starting service [Tomcat]
+2024-09-16 14:30:15 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:30:15 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:30:15 - Root WebApplicationContext: initialization completed in 646 ms
+2024-09-16 14:30:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:30:15 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:30:15 - HHH000026: Second-level cache disabled
+2024-09-16 14:30:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:30:15 - HikariPool-1 - Starting...
+2024-09-16 14:30:15 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17738d46
+2024-09-16 14:30:15 - HikariPool-1 - Start completed.
+2024-09-16 14:30:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:30:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:30:16 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:30:16 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:30:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:30:16 - LiveReload server is running on port 35729
+2024-09-16 14:30:16 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:30:16 - Started DemoApplication in 2.309 seconds (process running for 2.515)
+2024-09-16 14:30:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:30:25 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:30:25 - Completed initialization in 0 ms
+2024-09-16 14:30:25 - Incoming request: GET /courses
+2024-09-16 14:30:25 - Request Headers: {postman-token=7084bf34-619b-4472-9fb1-e2bf7636ac04, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:30:25 - Request Params: None
+2024-09-16 14:30:25 - Outgoing response for: GET /courses
+2024-09-16 14:30:25 - Response Status: 200 OK
+2024-09-16 14:30:25 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}]}
+2024-09-16 14:30:32 - Incoming request: GET /courses/12
+2024-09-16 14:30:32 - Request Headers: {postman-token=33508d4d-debf-466c-b28f-4a096980f698, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:30:32 - Request Params: None
+2024-09-16 14:30:32 - Outgoing response for: GET /courses/12
+2024-09-16 14:30:32 - Response Status: 404 NOT_FOUND
+2024-09-16 14:30:32 - Response Body: ResponseWrapper{status='fail', message='Course not found', data=null}
+2024-09-16 14:30:36 - Incoming request: GET /courses/1
+2024-09-16 14:30:36 - Request Headers: {postman-token=7b0f3c49-1b55-450a-8760-fa8482d0783d, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:30:36 - Request Params: None
+2024-09-16 14:30:36 - Outgoing response for: GET /courses/1
+2024-09-16 14:30:36 - Response Status: 200 OK
+2024-09-16 14:30:36 - Response Body: ResponseWrapper{status='success', message='Course fetched successfully', data=CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}}
+2024-09-16 14:31:26 - Incoming request: POST /courses
+2024-09-16 14:31:26 - Request Headers: {content-length=75, postman-token=b575c143-7d85-4d22-a113-1744f8297827, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:31:26 - Request Params: None
+2024-09-16 14:31:26 - Outgoing response for: POST /courses
+2024-09-16 14:31:26 - Response Status: 201 CREATED
+2024-09-16 14:31:26 - Response Body: ResponseWrapper{status='success', message='Course created successfully', data=CourseDTO{courseId=2, courseName='C#', courseCode='12j21', departmentId=452}}
+2024-09-16 14:31:29 - Incoming request: GET /courses
+2024-09-16 14:31:29 - Request Headers: {postman-token=1fb3d586-d42b-4606-976c-5514fa9cf98a, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:31:29 - Request Params: None
+2024-09-16 14:31:29 - Outgoing response for: GET /courses
+2024-09-16 14:31:29 - Response Status: 200 OK
+2024-09-16 14:31:29 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=2, courseName='C#', courseCode='12j21', departmentId=452}]}
+2024-09-16 14:33:06 - Incoming request: PUT /courses/2
+2024-09-16 14:33:06 - Request Headers: {content-length=76, postman-token=9c95ae33-6f7d-4a5c-82ff-ff07ee0b8f73, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:33:06 - Request Params: None
+2024-09-16 14:33:07 - Outgoing response for: PUT /courses/2
+2024-09-16 14:33:07 - Response Status: 200 OK
+2024-09-16 14:33:07 - Response Body: ResponseWrapper{status='success', message='Course updated successfully', data=CourseDTO{courseId=2, courseName='C++', courseCode='12221', departmentId=452}}
+2024-09-16 14:33:11 - Incoming request: GET /courses
+2024-09-16 14:33:11 - Request Headers: {postman-token=770b393d-16d9-479a-a15d-a4843a75e5e9, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:33:11 - Request Params: None
+2024-09-16 14:33:11 - Outgoing response for: GET /courses
+2024-09-16 14:33:11 - Response Status: 200 OK
+2024-09-16 14:33:11 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=2, courseName='C++', courseCode='12221', departmentId=452}]}
+2024-09-16 14:33:22 - Incoming request: DELETE /courses/222
+2024-09-16 14:33:22 - Request Headers: {postman-token=11d7289e-50ce-4e72-ae4d-9e6d75d59a49, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:33:22 - Request Params: None
+2024-09-16 14:33:22 - Outgoing response for: DELETE /courses/222
+2024-09-16 14:33:22 - Response Status: 204 NO_CONTENT
+2024-09-16 14:33:22 - Response Body: null
+2024-09-16 14:33:24 - Incoming request: DELETE /courses/222
+2024-09-16 14:33:24 - Request Headers: {postman-token=74ff0416-fb10-456d-96da-c4567bcd762a, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:33:24 - Request Params: None
+2024-09-16 14:33:24 - Outgoing response for: DELETE /courses/222
+2024-09-16 14:33:24 - Response Status: 204 NO_CONTENT
+2024-09-16 14:33:24 - Response Body: null
+2024-09-16 14:33:30 - Incoming request: GET /courses
+2024-09-16 14:33:30 - Request Headers: {postman-token=fd5ad264-3d3b-4fce-b838-c579aa1eef1f, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:33:30 - Request Params: None
+2024-09-16 14:33:30 - Outgoing response for: GET /courses
+2024-09-16 14:33:30 - Response Status: 200 OK
+2024-09-16 14:33:30 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=2, courseName='C++', courseCode='12221', departmentId=452}]}
+2024-09-16 14:39:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:39:10 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:39:10 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:39:11 - Starting DemoApplication using Java 21.0.4 with PID 87723 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:39:11 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:39:11 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:39:11 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:39:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:39:12 - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:39:12 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:39:12 - Starting service [Tomcat]
+2024-09-16 14:39:12 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:39:12 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:39:12 - Root WebApplicationContext: initialization completed in 625 ms
+2024-09-16 14:39:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:39:12 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:39:12 - HHH000026: Second-level cache disabled
+2024-09-16 14:39:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:39:12 - HikariPool-1 - Starting...
+2024-09-16 14:39:12 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60083ba4
+2024-09-16 14:39:12 - HikariPool-1 - Start completed.
+2024-09-16 14:39:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:39:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:39:13 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:39:13 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:39:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:39:13 - LiveReload server is running on port 35729
+2024-09-16 14:39:13 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:39:13 - Started DemoApplication in 2.324 seconds (process running for 2.533)
+2024-09-16 14:39:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:39:24 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:39:24 - Completed initialization in 1 ms
+2024-09-16 14:39:24 - Incoming request: PUT /courses/299
+2024-09-16 14:39:24 - Request Headers: {content-length=76, postman-token=7bdb7c1e-a541-4437-b17a-34b03313b59e, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:39:24 - Request Params: None
+2024-09-16 14:39:24 - Outgoing response for: PUT /courses/299
+2024-09-16 14:39:24 - Response Status: 404 NOT_FOUND
+2024-09-16 14:39:24 - Response Body: ResponseWrapper{status='fail', message='Course not found', data=null}
+2024-09-16 14:39:43 - Incoming request: GET /courses
+2024-09-16 14:39:43 - Request Headers: {postman-token=52b5702e-2122-4415-840a-32d3160a5e49, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:39:43 - Request Params: None
+2024-09-16 14:39:43 - Outgoing response for: GET /courses
+2024-09-16 14:39:43 - Response Status: 200 OK
+2024-09-16 14:39:43 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=2, courseName='C++', courseCode='12221', departmentId=452}]}
+2024-09-16 14:39:53 - Incoming request: PUT /courses/2
+2024-09-16 14:39:53 - Request Headers: {content-length=74, postman-token=e294677e-0d04-4783-859b-0c87ff3622b1, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:39:53 - Request Params: None
+2024-09-16 14:39:53 - Outgoing response for: PUT /courses/2
+2024-09-16 14:39:53 - Response Status: 200 OK
+2024-09-16 14:39:53 - Response Body: ResponseWrapper{status='success', message='Course updated successfully', data=CourseDTO{courseId=2, courseName='C', courseCode='12221', departmentId=452}}
+2024-09-16 14:39:57 - Incoming request: GET /courses
+2024-09-16 14:39:57 - Request Headers: {postman-token=9a7cacfc-54db-4e70-944a-9d659f45dc2b, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:39:57 - Request Params: None
+2024-09-16 14:39:57 - Outgoing response for: GET /courses
+2024-09-16 14:39:57 - Response Status: 200 OK
+2024-09-16 14:39:57 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=2, courseName='C', courseCode='12221', departmentId=452}]}
+2024-09-16 14:40:03 - Incoming request: GET /courses/1
+2024-09-16 14:40:03 - Request Headers: {postman-token=2aeab699-8b41-4ddd-8ba4-7abafa8f0e7c, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:40:03 - Request Params: None
+2024-09-16 14:40:03 - Outgoing response for: GET /courses/1
+2024-09-16 14:40:03 - Response Status: 200 OK
+2024-09-16 14:40:03 - Response Body: ResponseWrapper{status='success', message='Course fetched successfully', data=CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}}
+2024-09-16 14:40:09 - Incoming request: GET /courses/2
+2024-09-16 14:40:09 - Request Headers: {postman-token=25c1bd1c-b2b7-4efc-9dbd-6f3bad7894ba, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:40:09 - Request Params: None
+2024-09-16 14:40:09 - Outgoing response for: GET /courses/2
+2024-09-16 14:40:09 - Response Status: 200 OK
+2024-09-16 14:40:09 - Response Body: ResponseWrapper{status='success', message='Course fetched successfully', data=CourseDTO{courseId=2, courseName='C', courseCode='12221', departmentId=452}}
+2024-09-16 14:40:17 - Incoming request: POST /courses
+2024-09-16 14:40:17 - Request Headers: {content-length=76, postman-token=77f20bd9-d59c-409c-bde8-bde72b5500a1, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:40:17 - Request Params: None
+2024-09-16 14:40:17 - Outgoing response for: POST /courses
+2024-09-16 14:40:17 - Response Status: 201 CREATED
+2024-09-16 14:40:17 - Response Body: ResponseWrapper{status='success', message='Course created successfully', data=CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}}
+2024-09-16 14:41:51 - Incoming request: DELETE /courses/222
+2024-09-16 14:41:51 - Request Headers: {postman-token=851b446d-4acd-417b-8db8-111f79289721, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:41:51 - Request Params: None
+2024-09-16 14:41:51 - Outgoing response for: DELETE /courses/222
+2024-09-16 14:41:51 - Response Status: 204 NO_CONTENT
+2024-09-16 14:41:51 - Response Body: null
+2024-09-16 14:43:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:43:31 - HikariPool-1 - Shutdown initiated...
+2024-09-16 14:43:31 - HikariPool-1 - Shutdown completed.
+2024-09-16 14:43:32 - Starting DemoApplication using Java 21.0.4 with PID 88138 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-16 14:43:32 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 14:43:33 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-16 14:43:33 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-16 14:43:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 14:43:33 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-09-16 14:43:33 - Tomcat initialized with port 8080 (http)
+2024-09-16 14:43:33 - Starting service [Tomcat]
+2024-09-16 14:43:33 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-16 14:43:33 - Initializing Spring embedded WebApplicationContext
+2024-09-16 14:43:33 - Root WebApplicationContext: initialization completed in 594 ms
+2024-09-16 14:43:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-16 14:43:33 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-16 14:43:33 - HHH000026: Second-level cache disabled
+2024-09-16 14:43:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 14:43:33 - HikariPool-1 - Starting...
+2024-09-16 14:43:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65ff8d2f
+2024-09-16 14:43:33 - HikariPool-1 - Start completed.
+2024-09-16 14:43:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-16 14:43:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 14:43:34 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-16 14:43:34 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-16 14:43:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 14:43:34 - LiveReload server is running on port 35729
+2024-09-16 14:43:34 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-16 14:43:34 - Started DemoApplication in 2.133 seconds (process running for 2.327)
+2024-09-16 14:43:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 14:43:38 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 14:43:38 - Completed initialization in 1 ms
+2024-09-16 14:43:38 - Incoming request: POST /auth/login
+2024-09-16 14:43:38 - Request Headers: {content-length=61, postman-token=021c58db-bd22-49d8-97c4-816434b3ecd4, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:38 - Request Params: None
+2024-09-16 14:43:38 - Outgoing response for: POST /auth/login
+2024-09-16 14:43:38 - Response Status: 200 OK
+2024-09-16 14:43:38 - Response Body: com.example.demo.responses.LoginResponse@519227a
+2024-09-16 14:43:43 - Incoming request: DELETE /courses/222
+2024-09-16 14:43:43 - Request Headers: {postman-token=5114e492-2c63-4029-aa97-730f361a6820, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:43 - Request Params: None
+2024-09-16 14:43:43 - Outgoing response for: DELETE /courses/222
+2024-09-16 14:43:43 - Response Status: 404 NOT_FOUND
+2024-09-16 14:43:43 - Response Body: ResponseWrapper{status='fail', message='Course not found', data=null}
+2024-09-16 14:43:44 - Incoming request: DELETE /courses/222
+2024-09-16 14:43:44 - Request Headers: {postman-token=27a4d6a6-cf65-47c9-8a75-45506f699fa9, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:44 - Request Params: None
+2024-09-16 14:43:44 - Outgoing response for: DELETE /courses/222
+2024-09-16 14:43:44 - Response Status: 404 NOT_FOUND
+2024-09-16 14:43:44 - Response Body: ResponseWrapper{status='fail', message='Course not found', data=null}
+2024-09-16 14:43:48 - Incoming request: DELETE /courses/2
+2024-09-16 14:43:48 - Request Headers: {postman-token=b3fd887c-cf78-418e-9c79-2ba3ac7ffe29, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:48 - Request Params: None
+2024-09-16 14:43:48 - Outgoing response for: DELETE /courses/2
+2024-09-16 14:43:48 - Response Status: 200 OK
+2024-09-16 14:43:48 - Response Body: ResponseWrapper{status='success', message='Course deleted successfully', data=null}
+2024-09-16 14:43:57 - Incoming request: GET /courses
+2024-09-16 14:43:57 - Request Headers: {postman-token=3d3f2620-f324-4f9e-bf0f-f8f6b83222ad, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:57 - Request Params: None
+2024-09-16 14:43:57 - Outgoing response for: GET /courses
+2024-09-16 14:43:57 - Response Status: 200 OK
+2024-09-16 14:43:57 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:43:59 - Incoming request: GET /courses
+2024-09-16 14:43:59 - Request Headers: {postman-token=dd42b1df-b824-422c-b1c1-aaf78b42aa03, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:43:59 - Request Params: None
+2024-09-16 14:43:59 - Outgoing response for: GET /courses
+2024-09-16 14:43:59 - Response Status: 200 OK
+2024-09-16 14:43:59 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:00 - Incoming request: GET /courses
+2024-09-16 14:44:00 - Request Headers: {postman-token=eea7b8b9-b683-45fb-ba9a-0f5baebd8fb4, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:00 - Request Params: None
+2024-09-16 14:44:00 - Outgoing response for: GET /courses
+2024-09-16 14:44:00 - Response Status: 200 OK
+2024-09-16 14:44:00 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:00 - Incoming request: GET /courses
+2024-09-16 14:44:00 - Request Headers: {postman-token=9acf4949-0585-4354-b7c6-263e927be754, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:00 - Request Params: None
+2024-09-16 14:44:00 - Outgoing response for: GET /courses
+2024-09-16 14:44:00 - Response Status: 200 OK
+2024-09-16 14:44:00 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:00 - Incoming request: GET /courses
+2024-09-16 14:44:00 - Request Headers: {postman-token=288e1512-da65-4205-9ce5-a8e43f25a496, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:00 - Request Params: None
+2024-09-16 14:44:00 - Outgoing response for: GET /courses
+2024-09-16 14:44:00 - Response Status: 200 OK
+2024-09-16 14:44:00 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:02 - Incoming request: GET /courses
+2024-09-16 14:44:02 - Request Headers: {postman-token=bd6676b6-8642-418a-bae6-6d8ff0711b91, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:02 - Request Params: None
+2024-09-16 14:44:02 - Outgoing response for: GET /courses
+2024-09-16 14:44:02 - Response Status: 200 OK
+2024-09-16 14:44:02 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=1, courseName='Java', courseCode='1221', departmentId=452}, CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:09 - Incoming request: DELETE /courses/2
+2024-09-16 14:44:09 - Request Headers: {postman-token=245c7203-454c-414c-a2e1-56b174605e6f, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:09 - Request Params: None
+2024-09-16 14:44:09 - Outgoing response for: DELETE /courses/2
+2024-09-16 14:44:09 - Response Status: 404 NOT_FOUND
+2024-09-16 14:44:09 - Response Body: ResponseWrapper{status='fail', message='Course not found', data=null}
+2024-09-16 14:44:12 - Incoming request: DELETE /courses/1
+2024-09-16 14:44:12 - Request Headers: {postman-token=14a530b0-5cd1-4509-90a6-a9e463461ed8, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:12 - Request Params: None
+2024-09-16 14:44:12 - Outgoing response for: DELETE /courses/1
+2024-09-16 14:44:12 - Response Status: 200 OK
+2024-09-16 14:44:12 - Response Body: ResponseWrapper{status='success', message='Course deleted successfully', data=null}
+2024-09-16 14:44:16 - Incoming request: GET /courses
+2024-09-16 14:44:16 - Request Headers: {postman-token=7555aa76-2aea-4c76-abe5-83059b735f9d, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:16 - Request Params: None
+2024-09-16 14:44:16 - Outgoing response for: GET /courses
+2024-09-16 14:44:16 - Response Status: 200 OK
+2024-09-16 14:44:16 - Response Body: ResponseWrapper{status='success', message='Courses fetched successfully', data=[CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}
+2024-09-16 14:44:30 - Incoming request: GET /departments
+2024-09-16 14:44:30 - Request Headers: {content-length=97, postman-token=ef788037-d566-49f2-b16f-3f3aaf560cb7, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:30 - Request Params: None
+2024-09-16 14:44:30 - Outgoing response for: GET /departments
+2024-09-16 14:44:30 - Response Status: 200 OK
+2024-09-16 14:44:30 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}], courses=[CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen7777', email='jhonDoe7777@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}], courses=[]}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[], courses=[]}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[], courses=[]}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[], courses=[]}, DepartmentDTO{id=1052, name='DOS', address='russian federation', code='390', students=[], courses=[]}]}
+2024-09-16 14:44:48 - Incoming request: GET /departments/452
+2024-09-16 14:44:48 - Request Headers: {postman-token=9b1aaffa-7d36-4372-bc77-e3f944d0b51f, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-16 14:44:48 - Request Params: None
+2024-09-16 14:44:48 - Outgoing response for: GET /departments/452
+2024-09-16 14:44:48 - Response Status: 200 OK
+2024-09-16 14:44:48 - Response Body: ResponseWrapper{status='success', message='Department fetched successfully', data=DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}], courses=[CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}]}}

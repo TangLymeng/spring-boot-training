@@ -1,7 +1,9 @@
 package com.example.demo.service;
 
+import com.example.demo.dtos.CourseDTO;
 import com.example.demo.dtos.DepartmentDTO;
 import com.example.demo.dtos.StudentDTO;
+import com.example.demo.entity.Course;
 import com.example.demo.entity.Department;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.DepartmentRepository;
@@ -71,7 +73,20 @@ public class DepartmentServiceImpl implements DepartmentService {
         departmentDTO.setStudents(department.getStudents().stream()
                 .map(this::convertToStudentDTO)
                 .collect(Collectors.toList()));
+        departmentDTO.setCourses(department.getCourses().stream()
+                .map(this::convertToCourseDTO)
+                .collect(Collectors.toList()));
+
         return departmentDTO;
+    }
+
+    private CourseDTO convertToCourseDTO(Course course) {
+        return CourseDTO.builder()
+                .courseId(course.getCourseId())
+                .courseName(course.getCourseName())
+                .courseCode(course.getCourseCode())
+                .departmentId(course.getDepartment().getDepartmentId())
+                .build();
     }
 
     private Department convertToEntity(DepartmentDTO departmentDTO) {

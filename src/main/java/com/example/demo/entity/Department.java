@@ -1,9 +1,4 @@
-// Java Program to Illustrate Department File
-
-// Importing package module to code fragment
 package com.example.demo.entity;
-
-// Importing required classes
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -15,17 +10,13 @@ import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
-// Annotations
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
-// Class
 @Table(name = "department")
 public class Department {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentId;
@@ -33,16 +24,21 @@ public class Department {
     private String departmentAddress;
     private String departmentCode;
 
-    @JsonManagedReference // to avoid infinite loop
+    @JsonManagedReference
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Student> students = new ArrayList<>();
 
-//    @Override
-//    public String toString() {
-//        return "Department{" +
-//                "id=" + departmentId +
-//                ", name='" + departmentName + '\'' +
-//                // Avoid including fields that could cause recursion
-//                '}';
-//    }
+    @JsonManagedReference
+    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Course> courses = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "departmentId=" + departmentId +
+                ", departmentName='" + departmentName + '\'' +
+                ", departmentAddress='" + departmentAddress + '\'' +
+                ", departmentCode='" + departmentCode + '\'' +
+                '}';
+    }
 }
