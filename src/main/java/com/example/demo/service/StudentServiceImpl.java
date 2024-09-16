@@ -1,77 +1,93 @@
 package com.example.demo.service;
 
-import com.example.demo.dtos.DepartmentDTO;
+import com.example.demo.dtos.StudentDTO;
 import com.example.demo.entity.Department;
 import com.example.demo.entity.Student;
+import com.example.demo.repository.DepartmentRepository;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    private final DepartmentService departmentService;
-
-    @Autowired
     private StudentRepository studentRepository;
 
     @Autowired
-    public StudentServiceImpl(DepartmentService departmentService) {
-        this.departmentService = departmentService;
+    private DepartmentRepository departmentRepository;
+
+    @Override
+    public List<StudentDTO> fetchStudentList() {
+        return StreamSupport.stream(studentRepository.findAll().spliterator(), false)
+                .map(this::convertToDTO)
+                .collect(Collectors.toList());
+    }
+    @Override
+    public Optional<StudentDTO> getStudentById(Long studentId) {
+        return studentRepository.findById(studentId)
+                .map(this::convertToDTO);
     }
 
     @Override
-    public List<Student> fetchStudentList() {
-        return (List<Student>) studentRepository.findAll();
+    public void deleteStudentById(Long studentId) {
+        studentRepository.deleteById(studentId);
     }
 
     @Override
-    public void DeleteStudentById(Long StudentById) {
-        studentRepository.deleteById(StudentById);
-    }
-
-    @Override
-    public Optional<Student> getStudentById(Long StudentById) {
-        return studentRepository.findById(StudentById);
-    }
-
-    @Override
-    public Student updateStudent(Student student, Long studentId) {
-        // Retrieve the existing student
-        Student stuDB = studentRepository.findById(studentId)
+    public StudentDTO updateStudent(StudentDTO studentDTO, Long studentId) {
+        Student existingStudent = studentRepository.findById(studentId)
                 .orElseThrow(() -> new RuntimeException("Student not found for id: " + studentId));
 
-        // Check if a new department is provided in the student DTO
-        if (student.getDepartment() != null && student.getDepartment().getDepartmentId() != null) {
-            // Get the department using the new DepartmentService
-            DepartmentDTO departmentDTO = departmentService.getDepartmentById(student.getDepartment().getDepartmentId())
-                    .orElseThrow(() -> new RuntimeException("Department not found for id: " + student.getDepartment().getDepartmentId()));
-
-            // Set the department in the student entity
-            Department department = new Department(); // Create a new Department instance
-            department.setDepartmentId(departmentDTO.getId());
-            department.setDepartmentName(departmentDTO.getName());
-            department.setDepartmentAddress(departmentDTO.getAddress());
-            department.setDepartmentCode(departmentDTO.getCode());
-
-            stuDB.setDepartment(department);
+        if (studentDTO.getStudentName() != null) {
+            existingStudent.setStudentName(studentDTO.getStudentName());
+        }
+        if (studentDTO.getStudentEmail() != null) {
+            Optional<Student> studentWithEmail = studentRepository.findByStudentEmail(studentDTO.getStudentEmail());
+            if (studentWithEmail.isPresent() && !studentWithEmail.get().getStudentId().equals(studentId)) {
+                throw new RuntimeException("Email is already in use by another student");
+            }
+            existingStudent.setStudentEmail(studentDTO.getStudentEmail());
+        }
+        if (studentDTO.getDepartmentId() != null) {
+            Department department = departmentRepository.findById(studentDTO.getDepartmentId())
+                    .orElseThrow(() -> new RuntimeException("Department not found for id: " + studentDTO.getDepartmentId()));
+            existingStudent.setDepartment(department);
+        }
+        if (studentDTO.getStudentImageUrl() != null) {
+            existingStudent.setStudentImageUrl(studentDTO.getStudentImageUrl());
         }
 
-        // Update the student name if provided
-        if (student.getStudentName() != null) {
-            stuDB.setStudentName(student.getStudentName());
+        Student updatedStudent = studentRepository.save(existingStudent);
+        return convertToDTO(updatedStudent);
+    }
+
+    private StudentDTO convertToDTO(Student student) {
+        StudentDTO studentDTO = new StudentDTO();
+        studentDTO.setId(student.getStudentId());
+        studentDTO.setStudentName(student.getStudentName());
+        studentDTO.setStudentEmail(student.getStudentEmail());
+        studentDTO.setDepartmentId(student.getDepartment().getDepartmentId());
+        studentDTO.setStudentImageUrl(student.getStudentImageUrl());
+        return studentDTO;
+    }
+
+    private Student convertToEntity(StudentDTO studentDTO) {
+        Student student = new Student();
+        student.setStudentId(studentDTO.getId());
+        student.setStudentName(studentDTO.getStudentName());
+        student.setStudentEmail(studentDTO.getStudentEmail());
+        if (studentDTO.getDepartmentId() != null) {
+            Department department = departmentRepository.findById(studentDTO.getDepartmentId())
+                    .orElseThrow(() -> new RuntimeException("Department not found for id: " + studentDTO.getDepartmentId()));
+            student.setDepartment(department);
         }
-
-        // Update the student email if provided
-        if (student.getStudentEmail() != null) {
-            stuDB.setStudentEmail(student.getStudentEmail());
-        }
-
-        // Save and return the updated student
-        return studentRepository.save(stuDB);
-    }}
-
+        student.setStudentImageUrl(studentDTO.getStudentImageUrl());
+        return student;
+    }
+}

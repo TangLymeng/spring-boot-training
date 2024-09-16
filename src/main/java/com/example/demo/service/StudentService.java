@@ -1,22 +1,12 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.Department;
-import com.example.demo.entity.Student;
-
+import com.example.demo.dtos.StudentDTO;
 import java.util.List;
 import java.util.Optional;
 
 public interface StudentService {
-
-    // update
-    Student updateStudent(Student student, Long studentId);
-
-    // read
-    List<Student> fetchStudentList();
-
-    // delete
-    void DeleteStudentById(Long StudentById);
-
-    // getById
-    Optional<Student> getStudentById(Long StudentById);
+    List<StudentDTO> fetchStudentList();
+    Optional<StudentDTO> getStudentById(Long studentId);
+    void deleteStudentById(Long studentId);
+    StudentDTO updateStudent(StudentDTO studentDTO, Long studentId);
 }
