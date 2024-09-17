@@ -1313,3 +1313,780 @@ Caused by: java.lang.IllegalStateException: No thread-bound request found: Are y
 2024-09-17 13:57:48 - Outgoing response for: GET /departments
 2024-09-17 13:57:48 - Response Status: 200 OK
 2024-09-17 13:57:48 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}, StudentDTO{id=1952, name='jhon doe999', email='jhonDoe999@gmail.com', departmentCode='452'}, StudentDTO{id=2002, name='jhondoe1112', email='jhonDoe99999@gmail.com', departmentCode='452'}], courses=[CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}, CourseDTO{courseId=102, courseName='C++', courseCode='12j221', departmentId=452}]}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen77', email='jhonDoe77@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}], courses=[]}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[], courses=[]}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[], courses=[]}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[], courses=[]}, DepartmentDTO{id=1152, name='DOSED', address='russian federationsSS', code='33jj0', students=[], courses=[]}, DepartmentDTO{id=1202, name='DOSEDD', address='russian federationsSSS', code='33jj890', students=[], courses=[]}, DepartmentDTO{id=1252, name='DOSEDDDD', address='russian federationsSSS', code='33jj89330', students=[], courses=[]}, DepartmentDTO{id=1302, name='DOSEDDD1D', address='russian federationsSSS', code='33jj893320', students=[], courses=[]}, DepartmentDTO{id=1352, name='DOSEDDD1dD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1353, name='DOSEDDD1ddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1402, name='DOSEDDD1dDdD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1452, name='DOSEDDD1dDddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1453, name='DOSEDDD1dDddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1502, name='DOSEDDD1dDddsdD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1552, name='DOSEDDD1dDddsdDjj', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1602, name='DOSEDDD1dDddsdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1652, name='DOSEDDD1dDddssdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1702, name='DOdDddssdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1752, name='DdDjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}, DepartmentDTO{id=1802, name='DdDsjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}, DepartmentDTO{id=1852, name='DdDdsjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}]}
+2024-09-17 14:22:48 - Incoming request: POST /auth/login
+2024-09-17 14:22:48 - Request Headers: {content-length=64, postman-token=c35b480b-6b8f-4183-8056-35c5dd50f65a, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:22:48 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:22:48 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 14:22:48 - Outgoing response for: POST /auth/login
+2024-09-17 14:22:48 - Response Status: 200 OK
+2024-09-17 14:22:48 - Response Body: com.example.demo.responses.LoginResponse@7e4dad43
+2024-09-17 14:23:01 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:26:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:26:14 - HikariPool-1 - Shutdown initiated...
+2024-09-17 14:26:14 - HikariPool-1 - Shutdown completed.
+2024-09-17 14:26:16 - Starting DemoApplication using Java 21.0.4 with PID 47337 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:26:16 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:26:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 14:26:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 14:26:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:26:16 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:26:16 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:26:16 - Starting service [Tomcat]
+2024-09-17 14:26:16 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:26:16 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:26:16 - Root WebApplicationContext: initialization completed in 613 ms
+2024-09-17 14:26:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:26:16 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 14:26:16 - HHH000026: Second-level cache disabled
+2024-09-17 14:26:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:26:16 - HikariPool-1 - Starting...
+2024-09-17 14:26:17 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b673e0
+2024-09-17 14:26:17 - HikariPool-1 - Start completed.
+2024-09-17 14:26:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:26:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:26:17 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:26:17 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:26:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:26:18 - LiveReload server is running on port 35729
+2024-09-17 14:26:18 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:26:18 - Started DemoApplication in 2.132 seconds (process running for 2.351)
+2024-09-17 14:26:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:26:22 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:26:22 - Completed initialization in 7 ms
+2024-09-17 14:26:22 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:28:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:28:40 - HikariPool-1 - Shutdown initiated...
+2024-09-17 14:28:40 - HikariPool-1 - Shutdown completed.
+2024-09-17 14:28:42 - Starting DemoApplication using Java 21.0.4 with PID 47616 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:28:42 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:28:42 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 14:28:42 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 14:28:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:28:43 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:28:43 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:28:43 - Starting service [Tomcat]
+2024-09-17 14:28:43 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:28:43 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:28:43 - Root WebApplicationContext: initialization completed in 621 ms
+2024-09-17 14:28:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:28:43 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 14:28:43 - HHH000026: Second-level cache disabled
+2024-09-17 14:28:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:28:43 - HikariPool-1 - Starting...
+2024-09-17 14:28:43 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff91bc8
+2024-09-17 14:28:43 - HikariPool-1 - Start completed.
+2024-09-17 14:28:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:28:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:28:44 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:28:44 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:28:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:28:44 - LiveReload server is running on port 35729
+2024-09-17 14:28:44 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:28:44 - Started DemoApplication in 2.135 seconds (process running for 2.366)
+2024-09-17 14:28:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:28:48 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:28:48 - Completed initialization in 1 ms
+2024-09-17 14:28:48 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:32:31 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:32:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:32:57 - HikariPool-1 - Shutdown initiated...
+2024-09-17 14:32:57 - HikariPool-1 - Shutdown completed.
+2024-09-17 14:32:58 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:32:58 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:32:58 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 14:32:58 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 14:32:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:32:59 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:32:59 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:32:59 - Starting service [Tomcat]
+2024-09-17 14:32:59 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:32:59 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:32:59 - Root WebApplicationContext: initialization completed in 615 ms
+2024-09-17 14:32:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:32:59 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 14:32:59 - HHH000026: Second-level cache disabled
+2024-09-17 14:32:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:32:59 - HikariPool-1 - Starting...
+2024-09-17 14:32:59 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@464e2285
+2024-09-17 14:32:59 - HikariPool-1 - Start completed.
+2024-09-17 14:33:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:33:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:33:00 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:33:00 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:33:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:33:00 - LiveReload server is running on port 35729
+2024-09-17 14:33:00 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:33:00 - Started DemoApplication in 2.13 seconds (process running for 2.351)
+2024-09-17 14:33:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:33:23 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:33:23 - Completed initialization in 2 ms
+2024-09-17 14:33:23 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:39:37 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:39:45 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:39:50 - Restarting due to 46 class path changes (0 additions, 0 deletions, 46 modifications)
+2024-09-17 14:39:50 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:39:50 - HikariPool-1 - Shutdown initiated...
+2024-09-17 14:39:50 - HikariPool-1 - Shutdown completed.
+2024-09-17 14:39:50 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:39:50 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:39:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:39:50 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:39:50 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:39:50 - Starting service [Tomcat]
+2024-09-17 14:39:50 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:39:50 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:39:50 - Root WebApplicationContext: initialization completed in 125 ms
+2024-09-17 14:39:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:39:50 - HHH000026: Second-level cache disabled
+2024-09-17 14:39:50 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:39:50 - HikariPool-2 - Starting...
+2024-09-17 14:39:50 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e9dd40a
+2024-09-17 14:39:50 - HikariPool-2 - Start completed.
+2024-09-17 14:39:50 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:39:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:39:50 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:39:50 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:39:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:39:50 - LiveReload server is running on port 35729
+2024-09-17 14:39:50 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:39:50 - Started DemoApplication in 0.476 seconds (process running for 412.497)
+2024-09-17 14:39:50 - Condition evaluation unchanged
+2024-09-17 14:40:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:40:49 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:40:49 - Completed initialization in 14 ms
+2024-09-17 14:40:49 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:40:58 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:41:02 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 14:41:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:41:02 - HikariPool-2 - Shutdown initiated...
+2024-09-17 14:41:02 - HikariPool-2 - Shutdown completed.
+2024-09-17 14:41:02 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:41:02 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:41:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:41:02 - Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:41:02 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:41:02 - Starting service [Tomcat]
+2024-09-17 14:41:02 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:41:02 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:41:02 - Root WebApplicationContext: initialization completed in 115 ms
+2024-09-17 14:41:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:41:02 - HHH000026: Second-level cache disabled
+2024-09-17 14:41:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:41:02 - HikariPool-3 - Starting...
+2024-09-17 14:41:02 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41740e4
+2024-09-17 14:41:02 - HikariPool-3 - Start completed.
+2024-09-17 14:41:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:41:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:41:02 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:41:02 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:41:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:41:02 - LiveReload server is running on port 35729
+2024-09-17 14:41:02 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:41:02 - Started DemoApplication in 0.512 seconds (process running for 484.216)
+2024-09-17 14:41:02 - Condition evaluation unchanged
+2024-09-17 14:41:05 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:41:05 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:41:05 - Completed initialization in 17 ms
+2024-09-17 14:41:05 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "19024ll"]
+2024-09-17 14:43:43 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 14:43:44 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 14:43:45 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 14:43:46 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 14:43:47 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 14:43:47 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 14:43:48 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.entity.Student> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 14:45:52 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "18032kk"]
+2024-09-17 14:46:02 - Incoming request: DELETE /students/-18032
+2024-09-17 14:46:02 - Request Headers: {postman-token=b34e8bd5-8d32-4c03-86bf-5806a11f93bb, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:46:02 - Incoming request: DELETE /students/-18032 by user: jhonDoe99999@gmail.com
+2024-09-17 14:46:02 - Outgoing response for: DELETE /students/-18032
+2024-09-17 14:46:02 - Response Status: 404 NOT_FOUND
+2024-09-17 14:46:02 - Response Body: ResponseWrapper{status='fail', message='Student not found', data=null}
+2024-09-17 14:46:04 - Incoming request: DELETE /students/-18032
+2024-09-17 14:46:04 - Request Headers: {postman-token=3b80318e-578f-4e2d-bcd3-30537eed2e3d, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:46:04 - Incoming request: DELETE /students/-18032 by user: jhonDoe99999@gmail.com
+2024-09-17 14:46:04 - Outgoing response for: DELETE /students/-18032
+2024-09-17 14:46:04 - Response Status: 404 NOT_FOUND
+2024-09-17 14:46:04 - Response Body: ResponseWrapper{status='fail', message='Student not found', data=null}
+2024-09-17 14:46:05 - Incoming request: DELETE /students/-18032
+2024-09-17 14:46:05 - Request Headers: {postman-token=318f4a3e-7fa0-47c9-95a7-7e8da5a79c54, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:46:05 - Incoming request: DELETE /students/-18032 by user: jhonDoe99999@gmail.com
+2024-09-17 14:46:05 - Outgoing response for: DELETE /students/-18032
+2024-09-17 14:46:05 - Response Status: 404 NOT_FOUND
+2024-09-17 14:46:05 - Response Body: ResponseWrapper{status='fail', message='Student not found', data=null}
+2024-09-17 14:46:37 - Incoming request: DELETE /students/-18032
+2024-09-17 14:46:37 - Request Headers: {postman-token=fe7292f4-50dc-431e-a406-c8212e7a3425, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:46:37 - Incoming request: DELETE /students/-18032 by user: jhonDoe99999@gmail.com
+2024-09-17 14:46:37 - Outgoing response for: DELETE /students/-18032
+2024-09-17 14:46:37 - Response Status: 404 NOT_FOUND
+2024-09-17 14:46:37 - Response Body: ResponseWrapper{status='fail', message='Student not found', data=null}
+2024-09-17 14:46:38 - Incoming request: DELETE /students/-18032
+2024-09-17 14:46:38 - Request Headers: {postman-token=befb37eb-8910-4c3a-9002-e3bca0abef5a, host=localhost:8080, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:46:38 - Incoming request: DELETE /students/-18032 by user: jhonDoe99999@gmail.com
+2024-09-17 14:46:38 - Outgoing response for: DELETE /students/-18032
+2024-09-17 14:46:38 - Response Status: 404 NOT_FOUND
+2024-09-17 14:46:38 - Response Body: ResponseWrapper{status='fail', message='Student not found', data=null}
+2024-09-17 14:46:41 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 14:46:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:46:41 - HikariPool-3 - Shutdown initiated...
+2024-09-17 14:46:41 - HikariPool-3 - Shutdown completed.
+2024-09-17 14:46:41 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 14:46:41 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 14:46:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 14:46:41 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 14:46:41 - Tomcat initialized with port 8080 (http)
+2024-09-17 14:46:41 - Starting service [Tomcat]
+2024-09-17 14:46:41 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 14:46:41 - Initializing Spring embedded WebApplicationContext
+2024-09-17 14:46:41 - Root WebApplicationContext: initialization completed in 107 ms
+2024-09-17 14:46:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 14:46:41 - HHH000026: Second-level cache disabled
+2024-09-17 14:46:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 14:46:41 - HikariPool-4 - Starting...
+2024-09-17 14:46:41 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52b2771
+2024-09-17 14:46:41 - HikariPool-4 - Start completed.
+2024-09-17 14:46:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 14:46:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 14:46:41 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 14:46:41 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 14:46:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 14:46:41 - LiveReload server is running on port 35729
+2024-09-17 14:46:41 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 14:46:41 - Started DemoApplication in 0.349 seconds (process running for 823.097)
+2024-09-17 14:46:41 - Condition evaluation unchanged
+2024-09-17 14:47:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 14:47:17 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 14:47:17 - Completed initialization in 6 ms
+2024-09-17 14:47:17 - Resolved [org.springframework.web.method.annotation.HandlerMethodValidationException: 400 BAD_REQUEST "Validation failure"]
+2024-09-17 14:47:19 - Resolved [org.springframework.web.method.annotation.HandlerMethodValidationException: 400 BAD_REQUEST "Validation failure"]
+2024-09-17 14:51:14 - Resolved [org.springframework.web.method.annotation.HandlerMethodValidationException: 400 BAD_REQUEST "Validation failure"]
+2024-09-17 14:51:23 - Incoming request: POST /auth/login
+2024-09-17 14:51:23 - Request Headers: {content-length=60, postman-token=6db95c9f-1d5d-4f72-9d14-88db8cebe007, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:23 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:23 - Request Body: LoginUserDto(email=jhonDoe99999@gmail, password=qwerty)
+2024-09-17 14:51:23 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:30 - Incoming request: POST /auth/login
+2024-09-17 14:51:30 - Request Headers: {content-length=65, postman-token=e2b323d7-9394-491e-adcd-a68fcb088414, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:30 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:30 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:30 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:31 - Incoming request: POST /auth/login
+2024-09-17 14:51:31 - Request Headers: {content-length=65, postman-token=7eea91a5-e73b-45c7-a9e1-c2f7c3b922b0, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:31 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:31 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:31 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:32 - Incoming request: POST /auth/login
+2024-09-17 14:51:32 - Request Headers: {content-length=65, postman-token=8af8475b-948a-4b02-96e4-ce1b7478a813, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:32 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:32 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:32 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:32 - Incoming request: POST /auth/login
+2024-09-17 14:51:32 - Request Headers: {content-length=65, postman-token=224a98a9-d8c4-46de-8f9f-fe5cd4318486, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:32 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:32 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:32 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:33 - Incoming request: POST /auth/login
+2024-09-17 14:51:33 - Request Headers: {content-length=65, postman-token=98a5934a-5f92-4128-8364-a519eabb9988, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:33 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:33 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:33 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:51:33 - Incoming request: POST /auth/login
+2024-09-17 14:51:33 - Request Headers: {content-length=65, postman-token=a9273881-3664-4338-8f7a-0685af6ea8f7, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:51:33 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:51:33 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert6y)
+2024-09-17 14:51:33 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 14:57:31 - Incoming request: POST /auth/login
+2024-09-17 14:57:31 - Request Headers: {content-length=65, postman-token=d800b671-f088-42e4-b7b9-a7917170c54f, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 14:57:31 - Incoming request: POST /auth/login by user: null
+2024-09-17 14:57:31 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert5y)
+2024-09-17 14:57:31 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 15:00:14 - Restarting due to 46 class path changes (0 additions, 45 deletions, 1 modification)
+2024-09-17 15:00:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:14 - HikariPool-4 - Shutdown initiated...
+2024-09-17 15:00:14 - HikariPool-4 - Shutdown completed.
+2024-09-17 15:00:14 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:00:14 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:00:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:00:14 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:00:14 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:00:14 - Starting service [Tomcat]
+2024-09-17 15:00:14 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:00:14 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:00:14 - Root WebApplicationContext: initialization completed in 115 ms
+2024-09-17 15:00:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:00:14 - HHH000026: Second-level cache disabled
+2024-09-17 15:00:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:00:14 - HikariPool-5 - Starting...
+2024-09-17 15:00:14 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e71c61b
+2024-09-17 15:00:14 - HikariPool-5 - Start completed.
+2024-09-17 15:00:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:00:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:14 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:00:14 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:00:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:00:15 - LiveReload server is running on port 35729
+2024-09-17 15:00:15 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:00:15 - Started DemoApplication in 0.396 seconds (process running for 1636.613)
+2024-09-17 15:00:15 - Condition evaluation unchanged
+2024-09-17 15:00:15 - Starting DemoApplicationTests using Java 22.0.2 with PID 51035 (started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:00:15 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:00:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:00:15 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:00:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:00:15 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:00:16 - HHH000026: Second-level cache disabled
+2024-09-17 15:00:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:00:16 - HikariPool-1 - Starting...
+2024-09-17 15:00:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45e639ee
+2024-09-17 15:00:16 - HikariPool-1 - Start completed.
+2024-09-17 15:00:16 - Restarting due to 45 class path changes (45 additions, 0 deletions, 0 modifications)
+2024-09-17 15:00:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:16 - HikariPool-5 - Shutdown initiated...
+2024-09-17 15:00:16 - HikariPool-5 - Shutdown completed.
+2024-09-17 15:00:16 - Starting DemoApplication using Java 21.0.4 with PID 48090 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:00:16 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:00:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:00:16 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:00:16 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:00:16 - Starting service [Tomcat]
+2024-09-17 15:00:16 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:00:16 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:00:16 - Root WebApplicationContext: initialization completed in 106 ms
+2024-09-17 15:00:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:00:16 - HHH000026: Second-level cache disabled
+2024-09-17 15:00:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:00:16 - HikariPool-6 - Starting...
+2024-09-17 15:00:16 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7449dddc
+2024-09-17 15:00:16 - HikariPool-6 - Start completed.
+2024-09-17 15:00:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:00:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:16 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:00:16 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:00:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:00:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:00:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:16 - LiveReload server is running on port 35729
+2024-09-17 15:00:16 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:00:16 - Started DemoApplication in 0.344 seconds (process running for 1638.412)
+2024-09-17 15:00:16 - Condition evaluation unchanged
+2024-09-17 15:00:17 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:00:17 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:00:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:00:17 - Started DemoApplicationTests in 2.135 seconds (process running for 2.536)
+2024-09-17 15:00:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:00:17 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:00:17 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:02:35 - Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.4 with PID 51305 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/demo-0.0.1-SNAPSHOT.jar started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:02:35 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:02:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:02:36 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:02:36 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:02:36 - Starting service [Tomcat]
+2024-09-17 15:02:36 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:02:36 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:02:36 - Root WebApplicationContext: initialization completed in 688 ms
+2024-09-17 15:02:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:02:36 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:02:36 - HHH000026: Second-level cache disabled
+2024-09-17 15:02:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:02:36 - HikariPool-1 - Starting...
+2024-09-17 15:02:37 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@100807ca
+2024-09-17 15:02:37 - HikariPool-1 - Start completed.
+2024-09-17 15:02:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:02:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:02:37 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:02:37 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:02:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:02:38 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-17 15:02:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:02:38 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:02:38 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:02:38 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-17 15:02:38 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-17 15:02:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:02:41 - HikariPool-6 - Shutdown initiated...
+2024-09-17 15:02:41 - HikariPool-6 - Shutdown completed.
+2024-09-17 15:02:45 - Starting DemoApplication v0.0.1-SNAPSHOT using Java 21.0.4 with PID 51343 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/demo-0.0.1-SNAPSHOT.jar started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:02:45 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:02:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:02:45 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:02:46 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:02:46 - Starting service [Tomcat]
+2024-09-17 15:02:46 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:02:46 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:02:46 - Root WebApplicationContext: initialization completed in 634 ms
+2024-09-17 15:02:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:02:46 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:02:46 - HHH000026: Second-level cache disabled
+2024-09-17 15:02:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:02:46 - HikariPool-1 - Starting...
+2024-09-17 15:02:46 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@727453a3
+2024-09-17 15:02:46 - HikariPool-1 - Start completed.
+2024-09-17 15:02:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:02:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:02:47 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:02:47 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:02:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:02:47 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:02:47 - Started DemoApplication in 2.25 seconds (process running for 2.46)
+2024-09-17 15:02:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:02:53 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:02:53 - Completed initialization in 3 ms
+2024-09-17 15:02:53 - Incoming request: POST /auth/login
+2024-09-17 15:02:53 - Request Headers: {content-length=65, postman-token=e4ecb79a-613d-422b-a21e-5647c4cd6eb0, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:02:53 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:02:53 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwert5y)
+2024-09-17 15:02:58 - Incoming request: POST /auth/login
+2024-09-17 15:02:58 - Request Headers: {content-length=64, postman-token=0e7d9f57-b0f3-4ee9-aa21-8ff755b2dc60, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:02:58 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:02:58 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:02:58 - Outgoing response for: POST /auth/login
+2024-09-17 15:02:58 - Response Status: 200 OK
+2024-09-17 15:02:58 - Response Body: com.example.demo.responses.LoginResponse@4fb115c9
+2024-09-17 15:07:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:07:04 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:07:04 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:07:06 - Starting DemoApplication using Java 21.0.4 with PID 51823 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:07:06 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:07:06 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:07:06 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:07:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:07:06 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:07:07 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:07:07 - Starting service [Tomcat]
+2024-09-17 15:07:07 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:07:07 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:07:07 - Root WebApplicationContext: initialization completed in 618 ms
+2024-09-17 15:07:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:07:07 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:07:07 - HHH000026: Second-level cache disabled
+2024-09-17 15:07:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:07:07 - HikariPool-1 - Starting...
+2024-09-17 15:07:07 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1360df5c
+2024-09-17 15:07:07 - HikariPool-1 - Start completed.
+2024-09-17 15:07:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:07:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:07:08 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:07:08 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:07:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:07:08 - LiveReload server is running on port 35729
+2024-09-17 15:07:08 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:07:08 - Started DemoApplication in 2.139 seconds (process running for 2.359)
+2024-09-17 15:07:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:07:15 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:07:15 - Completed initialization in 5 ms
+2024-09-17 15:07:15 - Incoming request: POST /auth/login
+2024-09-17 15:07:15 - Request Headers: {content-length=64, postman-token=44bb3e5f-4e80-4f47-a608-c596dcc1be84, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:07:15 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:07:15 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:07:16 - Outgoing response for: POST /auth/login
+2024-09-17 15:07:16 - Response Status: 200 OK
+2024-09-17 15:07:16 - Response Body: com.example.demo.responses.LoginResponse@7a2d12e4
+2024-09-17 15:07:30 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:07:42 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:07:42 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:07:42 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:07:44 - Starting DemoApplication using Java 21.0.4 with PID 51900 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:07:44 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:07:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:07:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:07:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:07:44 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:07:44 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:07:44 - Starting service [Tomcat]
+2024-09-17 15:07:44 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:07:44 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:07:44 - Root WebApplicationContext: initialization completed in 591 ms
+2024-09-17 15:07:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:07:45 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:07:45 - HHH000026: Second-level cache disabled
+2024-09-17 15:07:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:07:45 - HikariPool-1 - Starting...
+2024-09-17 15:07:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c574ddc
+2024-09-17 15:07:45 - HikariPool-1 - Start completed.
+2024-09-17 15:07:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:07:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:07:45 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:07:45 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:07:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:07:46 - LiveReload server is running on port 35729
+2024-09-17 15:07:46 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:07:46 - Started DemoApplication in 2.093 seconds (process running for 2.297)
+2024-09-17 15:07:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:07:49 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:07:49 - Completed initialization in 1 ms
+2024-09-17 15:08:43 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:08:43 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:08:43 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:08:45 - Starting DemoApplication using Java 21.0.4 with PID 52025 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:08:45 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:08:45 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:08:45 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:08:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:08:45 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:08:46 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:08:46 - Starting service [Tomcat]
+2024-09-17 15:08:46 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:08:46 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:08:46 - Root WebApplicationContext: initialization completed in 599 ms
+2024-09-17 15:08:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:08:46 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:08:46 - HHH000026: Second-level cache disabled
+2024-09-17 15:08:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:08:46 - HikariPool-1 - Starting...
+2024-09-17 15:08:46 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3316e529
+2024-09-17 15:08:46 - HikariPool-1 - Start completed.
+2024-09-17 15:08:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:08:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:08:47 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:08:47 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:08:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:08:47 - LiveReload server is running on port 35729
+2024-09-17 15:08:47 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:08:47 - Started DemoApplication in 2.044 seconds (process running for 2.232)
+2024-09-17 15:08:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:08:50 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:08:50 - Completed initialization in 1 ms
+2024-09-17 15:08:50 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:09:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:07 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:09:07 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:09:08 - Starting DemoApplication using Java 21.0.4 with PID 52078 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:09:08 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:09:08 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:09:08 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:09:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:09:09 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:09:09 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:09:09 - Starting service [Tomcat]
+2024-09-17 15:09:09 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:09:09 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:09:09 - Root WebApplicationContext: initialization completed in 595 ms
+2024-09-17 15:09:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:09:09 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:09:09 - HHH000026: Second-level cache disabled
+2024-09-17 15:09:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:09:09 - HikariPool-1 - Starting...
+2024-09-17 15:09:09 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a516d54
+2024-09-17 15:09:09 - HikariPool-1 - Start completed.
+2024-09-17 15:09:10 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:09:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:10 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:09:10 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:09:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:09:10 - LiveReload server is running on port 35729
+2024-09-17 15:09:10 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:09:10 - Started DemoApplication in 2.051 seconds (process running for 2.256)
+2024-09-17 15:09:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:09:13 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:09:13 - Completed initialization in 1 ms
+2024-09-17 15:09:13 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:09:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:21 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:09:21 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:09:23 - Starting DemoApplication using Java 21.0.4 with PID 52108 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:09:23 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:09:23 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:09:23 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:09:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:09:23 - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:09:23 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:09:23 - Starting service [Tomcat]
+2024-09-17 15:09:23 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:09:23 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:09:23 - Root WebApplicationContext: initialization completed in 574 ms
+2024-09-17 15:09:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:09:23 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:09:23 - HHH000026: Second-level cache disabled
+2024-09-17 15:09:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:09:23 - HikariPool-1 - Starting...
+2024-09-17 15:09:24 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f9e9068
+2024-09-17 15:09:24 - HikariPool-1 - Start completed.
+2024-09-17 15:09:24 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:09:24 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:24 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:09:24 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:09:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:09:24 - LiveReload server is running on port 35729
+2024-09-17 15:09:25 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:09:25 - Started DemoApplication in 2.034 seconds (process running for 2.223)
+2024-09-17 15:09:29 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:09:29 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:09:29 - Completed initialization in 1 ms
+2024-09-17 15:09:29 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:09:47 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 15:09:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:47 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:09:47 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:09:47 - Starting DemoApplication using Java 21.0.4 with PID 52108 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:09:47 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:09:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:09:47 - Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:09:47 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:09:47 - Starting service [Tomcat]
+2024-09-17 15:09:47 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:09:47 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:09:47 - Root WebApplicationContext: initialization completed in 139 ms
+2024-09-17 15:09:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:09:47 - HHH000026: Second-level cache disabled
+2024-09-17 15:09:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:09:47 - HikariPool-2 - Starting...
+2024-09-17 15:09:47 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d1c2a10
+2024-09-17 15:09:47 - HikariPool-2 - Start completed.
+2024-09-17 15:09:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:09:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:09:47 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:09:47 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:09:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:09:47 - LiveReload server is running on port 35729
+2024-09-17 15:09:47 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:09:47 - Started DemoApplication in 0.498 seconds (process running for 24.819)
+2024-09-17 15:09:47 - Condition evaluation unchanged
+2024-09-17 15:10:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:10:37 - HikariPool-2 - Shutdown initiated...
+2024-09-17 15:10:38 - HikariPool-2 - Shutdown completed.
+2024-09-17 15:10:39 - Starting DemoApplication using Java 21.0.4 with PID 52284 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:10:39 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:10:39 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:10:39 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:10:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:10:39 - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:10:40 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:10:40 - Starting service [Tomcat]
+2024-09-17 15:10:40 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:10:40 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:10:40 - Root WebApplicationContext: initialization completed in 619 ms
+2024-09-17 15:10:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:10:40 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:10:40 - HHH000026: Second-level cache disabled
+2024-09-17 15:10:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:10:40 - HikariPool-1 - Starting...
+2024-09-17 15:10:40 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f2ea45b
+2024-09-17 15:10:40 - HikariPool-1 - Start completed.
+2024-09-17 15:10:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:10:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:10:41 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:10:41 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:10:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:10:41 - LiveReload server is running on port 35729
+2024-09-17 15:10:41 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:10:41 - Started DemoApplication in 2.195 seconds (process running for 2.401)
+2024-09-17 15:10:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:10:46 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:10:46 - Completed initialization in 1 ms
+2024-09-17 15:10:46 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:10:47 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:10:48 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:10:48 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:10:49 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:10:50 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:11:08 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource departmentss.]
+2024-09-17 15:11:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:11:24 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:11:24 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:11:26 - Starting DemoApplication using Java 21.0.4 with PID 52389 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:11:26 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:11:26 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:11:26 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:11:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:11:26 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:11:26 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:11:26 - Starting service [Tomcat]
+2024-09-17 15:11:26 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:11:26 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:11:26 - Root WebApplicationContext: initialization completed in 621 ms
+2024-09-17 15:11:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:11:27 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:11:27 - HHH000026: Second-level cache disabled
+2024-09-17 15:11:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:11:27 - HikariPool-1 - Starting...
+2024-09-17 15:11:27 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7be5ae1f
+2024-09-17 15:11:27 - HikariPool-1 - Start completed.
+2024-09-17 15:11:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:11:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:11:27 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:11:27 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:11:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:11:28 - LiveReload server is running on port 35729
+2024-09-17 15:11:28 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:11:28 - Started DemoApplication in 2.112 seconds (process running for 2.339)
+2024-09-17 15:11:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:11:31 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:11:31 - Completed initialization in 1 ms
+2024-09-17 15:12:48 - Incoming request: GET /departments
+2024-09-17 15:12:48 - Request Headers: {content-length=97, postman-token=774872b9-d999-4f82-ad6b-33de4b4fedf3, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:12:48 - Incoming request: GET /departments by user: jhonDoe99999@gmail.com
+2024-09-17 15:12:48 - Outgoing response for: GET /departments
+2024-09-17 15:12:48 - Response Status: 200 OK
+2024-09-17 15:12:48 - Response Body: ResponseWrapper{status='success', message='Departments fetched successfully', data=[DepartmentDTO{id=452, name='ITE', address='IDK', code='32873', students=[StudentDTO{id=1652, name='jhon doe1', email='jhonDoe1@gmail.com', departmentCode='452'}, StudentDTO{id=1952, name='jhon doe999', email='jhonDoe999@gmail.com', departmentCode='452'}, StudentDTO{id=2002, name='jhondoe1112', email='jhonDoe99999@gmail.com', departmentCode='452'}], courses=[CourseDTO{courseId=52, courseName='C#', courseCode='12j221', departmentId=452}, CourseDTO{courseId=102, courseName='C++', courseCode='12j221', departmentId=452}]}, DepartmentDTO{id=453, name='Bio-E', address='ToulKork', code='12345', students=[StudentDTO{id=1602, name='jhondoen77', email='jhonDoe77@gmail.com', departmentCode='453'}, StudentDTO{id=1702, name='jhondoen168', email='jhonDoe168@gmail.com', departmentCode='453'}, StudentDTO{id=1902, name='jhon doe99', email='jhonDoe99@gmail.com', departmentCode='453'}], courses=[]}, DepartmentDTO{id=502, name='TEED', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=552, name='CS', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=602, name='Chemistry', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=652, name='Math', address='Rupp', code='1239', students=[], courses=[]}, DepartmentDTO{id=702, name='Physic', address='Techno', code='1239', students=[], courses=[]}, DepartmentDTO{id=752, name='Art', address='Techno', code='12239', students=[], courses=[]}, DepartmentDTO{id=1002, name='DOE', address='russian federation', code='33290', students=[], courses=[]}, DepartmentDTO{id=1152, name='DOSED', address='russian federationsSS', code='33jj0', students=[], courses=[]}, DepartmentDTO{id=1202, name='DOSEDD', address='russian federationsSSS', code='33jj890', students=[], courses=[]}, DepartmentDTO{id=1252, name='DOSEDDDD', address='russian federationsSSS', code='33jj89330', students=[], courses=[]}, DepartmentDTO{id=1302, name='DOSEDDD1D', address='russian federationsSSS', code='33jj893320', students=[], courses=[]}, DepartmentDTO{id=1352, name='DOSEDDD1dD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1353, name='DOSEDDD1ddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1402, name='DOSEDDD1dDdD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1452, name='DOSEDDD1dDddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1453, name='DOSEDDD1dDddD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1502, name='DOSEDDD1dDddsdD', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1552, name='DOSEDDD1dDddsdDjj', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1602, name='DOSEDDD1dDddsdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1652, name='DOSEDDD1dDddssdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1702, name='DOdDddssdDjjw', address='russian federationsSSS', code='33j320', students=[], courses=[]}, DepartmentDTO{id=1752, name='DdDjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}, DepartmentDTO{id=1802, name='DdDsjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}, DepartmentDTO{id=1852, name='DdDdsjjw', address='russian federationsSSS', code='33js320', students=[], courses=[]}]}
+2024-09-17 15:12:58 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 15:12:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:12:58 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:12:58 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:12:58 - Starting DemoApplication using Java 21.0.4 with PID 52389 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:12:58 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:12:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:12:58 - Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:12:58 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:12:58 - Starting service [Tomcat]
+2024-09-17 15:12:58 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:12:58 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:12:58 - Root WebApplicationContext: initialization completed in 157 ms
+2024-09-17 15:12:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:12:58 - HHH000026: Second-level cache disabled
+2024-09-17 15:12:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:12:58 - HikariPool-2 - Starting...
+2024-09-17 15:12:58 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51a82de3
+2024-09-17 15:12:58 - HikariPool-2 - Start completed.
+2024-09-17 15:12:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:12:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:12:58 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:12:58 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:12:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:12:59 - LiveReload server is running on port 35729
+2024-09-17 15:12:59 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:12:59 - Started DemoApplication in 0.48 seconds (process running for 93.233)
+2024-09-17 15:12:59 - Condition evaluation unchanged
+2024-09-17 15:13:16 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 15:13:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:13:16 - HikariPool-2 - Shutdown initiated...
+2024-09-17 15:13:16 - HikariPool-2 - Shutdown completed.
+2024-09-17 15:13:16 - Starting DemoApplication using Java 21.0.4 with PID 52389 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:13:16 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:13:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:13:16 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:13:16 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:13:16 - Starting service [Tomcat]
+2024-09-17 15:13:16 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:13:16 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:13:16 - Root WebApplicationContext: initialization completed in 112 ms
+2024-09-17 15:13:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:13:16 - HHH000026: Second-level cache disabled
+2024-09-17 15:13:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:13:16 - HikariPool-3 - Starting...
+2024-09-17 15:13:16 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee9aec9
+2024-09-17 15:13:16 - HikariPool-3 - Start completed.
+2024-09-17 15:13:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:13:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:13:16 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:13:16 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:13:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:13:16 - LiveReload server is running on port 35729
+2024-09-17 15:13:16 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:13:16 - Started DemoApplication in 0.386 seconds (process running for 110.708)
+2024-09-17 15:13:16 - Condition evaluation unchanged
