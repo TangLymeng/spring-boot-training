@@ -2,6 +2,7 @@ package com.example.demo.dtos;
 
 import lombok.Builder;
 
+// DTOs: Used to transfer data between layers.
 @Builder
 public class CourseDTO {
     private Long courseId;

@@ -5,6 +5,7 @@ import com.example.demo.dtos.CourseDTO;
 import java.util.List;
 import java.util.Optional;
 
+// Contains service interface for Course.
 public interface CourseService {
     CourseDTO saveCourse(CourseDTO courseDTO);
     CourseDTO updateCourse(CourseDTO courseDTO, Long courseId);

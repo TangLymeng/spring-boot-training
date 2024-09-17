@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+//The JwtService class is responsible for generating and validating JWT tokens.
 @Service
 public class JwtService {
     @Value("${security.jwt.secret-key}")

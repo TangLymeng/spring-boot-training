@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// Entities: Represent the database tables.
 @Entity
 @Data
 @NoArgsConstructor
