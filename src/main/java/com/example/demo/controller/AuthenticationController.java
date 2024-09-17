@@ -4,9 +4,11 @@ import com.example.demo.responses.LoginResponse;
 import com.example.demo.dtos.LoginUserDto;
 import com.example.demo.dtos.RegisterUserWithImageDto;
 import com.example.demo.entity.Student;
+import com.example.demo.responses.ResponseWrapper;
 import com.example.demo.service.AuthenticationService;
 import com.example.demo.service.JwtService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,9 +29,10 @@ public class AuthenticationController {
     }
 
     @PostMapping(value = "/signup", consumes = "multipart/form-data")
-    public ResponseEntity<Student> register(@Valid @ModelAttribute RegisterUserWithImageDto registerUserWithImageDto) {
+    public ResponseEntity<ResponseWrapper<Student>> register(@Valid @ModelAttribute RegisterUserWithImageDto registerUserWithImageDto) {
         if (authenticationService.emailExists(registerUserWithImageDto.getEmail())) {
-            throw new RuntimeException("Email already exists");
+            ResponseWrapper<Student> response = new ResponseWrapper<>("fail", "Email already exists", null);
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
         try {
             // Handle the file upload and set the URL
@@ -38,19 +41,22 @@ public class AuthenticationController {
 
             // Proceed with the registration process
             Student student = authenticationService.signup(registerUserWithImageDto);
-            return ResponseEntity.ok(student);
+            ResponseWrapper<Student> response = new ResponseWrapper<>("success", "Registration successful", student);
+            return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (IOException e) {
-            throw new RuntimeException("Image upload failed", e);
+            ResponseWrapper<Student> response = new ResponseWrapper<>("fail", "Image upload failed", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponse> authenticate(@Valid @RequestBody LoginUserDto loginUserDto) {
+    public ResponseEntity<ResponseWrapper<LoginResponse>> authenticate(@Valid @RequestBody LoginUserDto loginUserDto) {
         Student authenticatedUser = authenticationService.authenticate(loginUserDto);
 
         String jwtToken = jwtService.generateToken(authenticatedUser);
 
         LoginResponse loginResponse = new LoginResponse().setToken(jwtToken).setExpiresIn(jwtService.getExpirationTime());
-        return ResponseEntity.ok(loginResponse);
+        ResponseWrapper<LoginResponse> response = new ResponseWrapper<>("success", "Login successful", loginResponse);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

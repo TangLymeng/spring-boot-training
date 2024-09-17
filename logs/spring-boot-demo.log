@@ -2090,3 +2090,191 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-09-17 15:13:16 - Tomcat started on port 8080 (http) with context path '/'
 2024-09-17 15:13:16 - Started DemoApplication in 0.386 seconds (process running for 110.708)
 2024-09-17 15:13:16 - Condition evaluation unchanged
+2024-09-17 15:18:30 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 15:18:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:18:30 - HikariPool-3 - Shutdown initiated...
+2024-09-17 15:18:30 - HikariPool-3 - Shutdown completed.
+2024-09-17 15:18:30 - Starting DemoApplication using Java 21.0.4 with PID 52389 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:18:30 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:18:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:18:30 - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:18:30 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:18:30 - Starting service [Tomcat]
+2024-09-17 15:18:30 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:18:30 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:18:30 - Root WebApplicationContext: initialization completed in 105 ms
+2024-09-17 15:18:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:18:30 - HHH000026: Second-level cache disabled
+2024-09-17 15:18:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:18:30 - HikariPool-4 - Starting...
+2024-09-17 15:18:30 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@657d2cce
+2024-09-17 15:18:30 - HikariPool-4 - Start completed.
+2024-09-17 15:18:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:18:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:18:30 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:18:30 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:18:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:18:30 - LiveReload server is running on port 35729
+2024-09-17 15:18:30 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:18:30 - Started DemoApplication in 0.346 seconds (process running for 424.968)
+2024-09-17 15:18:30 - Condition evaluation unchanged
+2024-09-17 15:25:30 - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m59s827ms).
+2024-09-17 15:33:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:33:21 - HikariPool-4 - Shutdown initiated...
+2024-09-17 15:33:21 - HikariPool-4 - Shutdown completed.
+2024-09-17 15:33:23 - Starting DemoApplication using Java 21.0.4 with PID 54415 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:33:23 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:33:23 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:33:23 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:33:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:33:24 - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:33:24 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:33:24 - Starting service [Tomcat]
+2024-09-17 15:33:24 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:33:24 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:33:24 - Root WebApplicationContext: initialization completed in 630 ms
+2024-09-17 15:33:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:33:24 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:33:24 - HHH000026: Second-level cache disabled
+2024-09-17 15:33:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:33:24 - HikariPool-1 - Starting...
+2024-09-17 15:33:24 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6834e4ac
+2024-09-17 15:33:24 - HikariPool-1 - Start completed.
+2024-09-17 15:33:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:33:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:33:25 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:33:25 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:33:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:33:25 - LiveReload server is running on port 35729
+2024-09-17 15:33:25 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:33:25 - Started DemoApplication in 2.197 seconds (process running for 2.459)
+2024-09-17 15:33:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:33:30 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:33:30 - Completed initialization in 13 ms
+2024-09-17 15:33:30 - Incoming request: POST /auth/login
+2024-09-17 15:33:30 - Request Headers: {content-length=64, postman-token=b08296f6-27f2-4506-95e2-b737bff0b459, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:33:30 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:33:30 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:33:30 - Outgoing response for: POST /auth/login
+2024-09-17 15:33:30 - Response Status: 200 OK
+2024-09-17 15:33:30 - Response Body: com.example.demo.responses.LoginResponse@251f1664
+2024-09-17 15:33:32 - Incoming request: POST /auth/login
+2024-09-17 15:33:32 - Request Headers: {content-length=64, postman-token=45c422f8-db18-4197-afbf-bfc6a70f0d3a, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:33:32 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:33:32 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:33:32 - Outgoing response for: POST /auth/login
+2024-09-17 15:33:32 - Response Status: 200 OK
+2024-09-17 15:33:32 - Response Body: com.example.demo.responses.LoginResponse@ba8df4d
+2024-09-17 15:33:33 - Incoming request: POST /auth/login
+2024-09-17 15:33:33 - Request Headers: {content-length=64, postman-token=4eb2360f-ad6b-4208-95dd-c9631c1456c9, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:33:33 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:33:33 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:33:33 - Outgoing response for: POST /auth/login
+2024-09-17 15:33:33 - Response Status: 200 OK
+2024-09-17 15:33:33 - Response Body: com.example.demo.responses.LoginResponse@1520656e
+2024-09-17 15:33:59 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-17 15:33:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:33:59 - HikariPool-1 - Shutdown initiated...
+2024-09-17 15:33:59 - HikariPool-1 - Shutdown completed.
+2024-09-17 15:33:59 - Starting DemoApplication using Java 21.0.4 with PID 54415 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:33:59 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:33:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:33:59 - Finished Spring Data repository scanning in 5 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:33:59 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:33:59 - Starting service [Tomcat]
+2024-09-17 15:33:59 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:33:59 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:33:59 - Root WebApplicationContext: initialization completed in 128 ms
+2024-09-17 15:33:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:33:59 - HHH000026: Second-level cache disabled
+2024-09-17 15:33:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:33:59 - HikariPool-2 - Starting...
+2024-09-17 15:33:59 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28965418
+2024-09-17 15:33:59 - HikariPool-2 - Start completed.
+2024-09-17 15:33:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:33:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:33:59 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:33:59 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:34:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:34:00 - LiveReload server is running on port 35729
+2024-09-17 15:34:00 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:34:00 - Started DemoApplication in 0.446 seconds (process running for 36.769)
+2024-09-17 15:34:00 - Condition evaluation unchanged
+2024-09-17 15:35:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:35:32 - HikariPool-2 - Shutdown initiated...
+2024-09-17 15:35:32 - HikariPool-2 - Shutdown completed.
+2024-09-17 15:35:34 - Starting DemoApplication using Java 21.0.4 with PID 54618 (/Users/tanglymeng/Documents/spring-train/spring-boot-training/target/classes started by tanglymeng in /Users/tanglymeng/Documents/spring-train/spring-boot-training)
+2024-09-17 15:35:34 - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 15:35:34 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-17 15:35:34 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-17 15:35:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-17 15:35:34 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-09-17 15:35:34 - Tomcat initialized with port 8080 (http)
+2024-09-17 15:35:34 - Starting service [Tomcat]
+2024-09-17 15:35:34 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 15:35:34 - Initializing Spring embedded WebApplicationContext
+2024-09-17 15:35:34 - Root WebApplicationContext: initialization completed in 578 ms
+2024-09-17 15:35:34 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-17 15:35:34 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-17 15:35:34 - HHH000026: Second-level cache disabled
+2024-09-17 15:35:34 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-17 15:35:34 - HikariPool-1 - Starting...
+2024-09-17 15:35:34 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16bd8f5c
+2024-09-17 15:35:34 - HikariPool-1 - Start completed.
+2024-09-17 15:35:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-17 15:35:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-17 15:35:35 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-17 15:35:35 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-17 15:35:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 15:35:35 - LiveReload server is running on port 35729
+2024-09-17 15:35:35 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-17 15:35:35 - Started DemoApplication in 1.995 seconds (process running for 2.19)
+2024-09-17 15:35:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 15:35:41 - Initializing Servlet 'dispatcherServlet'
+2024-09-17 15:35:41 - Completed initialization in 1 ms
+2024-09-17 15:35:41 - Incoming request: POST /auth/login
+2024-09-17 15:35:41 - Request Headers: {content-length=64, postman-token=dcbbeff9-a79a-449b-94a4-667ae996462c, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:35:41 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:35:41 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:35:41 - Outgoing response for: POST /auth/login
+2024-09-17 15:35:41 - Response Status: 200 OK
+2024-09-17 15:35:41 - Response Body: ResponseWrapper{status='success', message='Login successful', data=com.example.demo.responses.LoginResponse@28ea3089}
+2024-09-17 15:35:45 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:46 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 15:35:46 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:47 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:47 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 15:35:48 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 15:35:48 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:49 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:50 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 15:35:50 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:35:51 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] ]
+2024-09-17 15:37:06 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.demo.responses.ResponseWrapper<com.example.demo.entity.Student>> com.example.demo.controller.AuthenticationController.register(com.example.demo.dtos.RegisterUserWithImageDto) with 2 errors: [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [NotEmpty.registerUserWithImageDto.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name]]; default message [Name cannot be empty]] [Field error in object 'registerUserWithImageDto' on field 'name': rejected value []; codes [Size.registerUserWithImageDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUserWithImageDto.name,name]; arguments []; default message [name],2147483647,3]; default message [Name should be at least 3 characters]] ]
+2024-09-17 15:37:09 - Incoming request: POST /auth/login
+2024-09-17 15:37:09 - Request Headers: {content-length=64, postman-token=0d254b8d-2d5d-45fd-abca-53e6a2996324, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:37:09 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:37:09 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:37:09 - Outgoing response for: POST /auth/login
+2024-09-17 15:37:09 - Response Status: 200 OK
+2024-09-17 15:37:09 - Response Body: ResponseWrapper{status='success', message='Login successful', data=com.example.demo.responses.LoginResponse@6658c04b}
+2024-09-17 15:37:19 - Incoming request: POST /auth/login
+2024-09-17 15:37:19 - Request Headers: {content-length=66, postman-token=41886724-591a-406c-8fac-4f605d2909de, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:37:19 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:37:19 - Request Body: LoginUserDto(email=jhonDoe9999923@gmail.com, password=qwerty)
+2024-09-17 15:37:19 - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2024-09-17 15:38:45 - Incoming request: POST /auth/login
+2024-09-17 15:38:45 - Request Headers: {content-length=64, postman-token=34b64164-7dbf-408e-ad8b-7575e72eb052, host=localhost:8080, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:38:45 - Incoming request: POST /auth/login by user: null
+2024-09-17 15:38:45 - Request Body: LoginUserDto(email=jhonDoe99999@gmail.com, password=qwerty)
+2024-09-17 15:38:45 - Outgoing response for: POST /auth/login
+2024-09-17 15:38:45 - Response Status: 200 OK
+2024-09-17 15:38:45 - Response Body: ResponseWrapper{status='success', message='Login successful', data=com.example.demo.responses.LoginResponse@abbac2a}
+2024-09-17 15:38:56 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource studentsss.]
+2024-09-17 15:39:16 - Incoming request: POST /auth/signup
+2024-09-17 15:39:16 - Request Headers: {content-length=20099, postman-token=f7298204-2c31-4d4b-8414-ed48253fbc62, host=localhost:8080, connection=keep-alive, content-type=multipart/form-data; boundary=--------------------------640685725534509923027566, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.42.0, accept=*/*}
+2024-09-17 15:39:16 - Incoming request: POST /auth/signup by user: null
+2024-09-17 15:39:16 - Request Body: RegisterUserWithImageDto(email=jhonDoe779@gmail.com, studentPassword=qwerty, name=jhondoe7777, studentImageUrl=null, studentDepartment=452, imageFile=org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2d61221b)
+2024-09-17 15:39:21 - Outgoing response for: POST /auth/signup
+2024-09-17 15:39:21 - Response Status: 200 OK
+2024-09-17 15:39:21 - Response Body: ResponseWrapper{status='success', message='Registration successful', data=Student{id=2052, name='jhondoe7777'}}
