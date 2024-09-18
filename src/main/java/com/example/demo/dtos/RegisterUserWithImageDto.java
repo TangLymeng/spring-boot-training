@@ -29,7 +29,5 @@ public class RegisterUserWithImageDto {
 
     private String studentImageUrl;
 
-    private long studentDepartment;
-
     private MultipartFile imageFile;
 }

@@ -1,5 +1,14 @@
 package com.example.demo.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class StudentDTO {
     private Long id;
     private String studentName;
@@ -11,8 +20,7 @@ public class StudentDTO {
     public Long getId() {
         return id;
     }
-
-    public void setId(Long id) {
+     public void setId(Long id) {
         this.id = id;
     }
 

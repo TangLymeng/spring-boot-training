@@ -2,10 +2,8 @@ package com.example.demo.service;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
-import com.example.demo.dtos.DepartmentDTO;
 import com.example.demo.dtos.LoginUserDto;
 import com.example.demo.dtos.RegisterUserWithImageDto;
-import com.example.demo.entity.Department;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,21 +19,15 @@ import java.util.Map;
 @Service
 public class AuthenticationService {
     private final StudentRepository studentRepository;
-
     private final PasswordEncoder passwordEncoder;
-
     private final AuthenticationManager authenticationManager;
-
-    private final DepartmentService departmentService;
+    private final Cloudinary cloudinary;
 
     @Autowired
-    private final Cloudinary cloudinary;
-    // Constructor
-    public AuthenticationService(StudentRepository studentRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, DepartmentService departmentService, Cloudinary cloudinary) {
+    public AuthenticationService(StudentRepository studentRepository, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager, Cloudinary cloudinary) {
         this.studentRepository = studentRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
-        this.departmentService = departmentService;
         this.cloudinary = cloudinary;
     }
 
@@ -53,19 +45,6 @@ public class AuthenticationService {
         Student student = new Student();
         student.setStudentEmail(input.getEmail());
         student.setStudentName(input.getName());
-
-        // Retrieve the department using the DepartmentService
-        DepartmentDTO departmentDTO = departmentService.getDepartmentById(input.getStudentDepartment())
-                .orElseThrow(() -> new RuntimeException("Department not found for id: " + input.getStudentDepartment()));
-
-        // Set the department in the student entity
-        Department department = new Department(); // Create a new Department instance
-        department.setDepartmentId(departmentDTO.getId());
-        department.setDepartmentName(departmentDTO.getName());
-        department.setDepartmentAddress(departmentDTO.getAddress());
-        department.setDepartmentCode(departmentDTO.getCode());
-
-        student.setDepartment(department);
         student.setStudentPassword(passwordEncoder.encode(input.getStudentPassword()));
         student.setStudentImageUrl(imageUrl);
 
@@ -85,7 +64,6 @@ public class AuthenticationService {
     }
 
     public boolean emailExists(String email) {
-        // Implement the logic to check if the email exists in the database
         return studentRepository.findByStudentEmail(email).isPresent();
     }
 }

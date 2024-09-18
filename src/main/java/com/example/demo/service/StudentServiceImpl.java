@@ -72,8 +72,12 @@ public class StudentServiceImpl implements StudentService {
         studentDTO.setId(student.getStudentId());
         studentDTO.setStudentName(student.getStudentName());
         studentDTO.setStudentEmail(student.getStudentEmail());
-        studentDTO.setDepartmentId(student.getDepartment().getDepartmentId());
+//        studentDTO.setDepartmentId(student.getDepartment().getDepartmentId());
         studentDTO.setStudentImageUrl(student.getStudentImageUrl());
+
+        if (student.getDepartment() != null) {
+            studentDTO.setDepartmentId(student.getDepartment().getDepartmentId());
+        }
         return studentDTO;
     }
 
