@@ -20,53 +20,78 @@ public class CourseController {
 
     @PostMapping
     public ResponseEntity<ResponseWrapper<CourseDTO>> createCourse(@RequestBody CourseDTO courseDTO) {
-        CourseDTO savedCourse = courseService.saveCourse(courseDTO);
-        ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course created successfully", savedCourse);
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        try {
+            CourseDTO savedCourse = courseService.saveCourse(courseDTO);
+            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course created successfully", savedCourse);
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
+        } catch (Exception e) {
+            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<ResponseWrapper<CourseDTO>> updateCourse(@PathVariable Long id, @RequestBody CourseDTO courseDTO) {
-        Optional<CourseDTO> existingCourse = courseService.getCourseById(id);
-        if (existingCourse.isPresent()) {
-            CourseDTO updatedCourse = courseService.updateCourse(courseDTO, id);
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course updated successfully", updatedCourse);
-            return ResponseEntity.ok(response);
-        } else {
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "Course not found", null);
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        try {
+            Optional<CourseDTO> existingCourse = courseService.getCourseById(id);
+            if (existingCourse.isPresent()) {
+                CourseDTO updatedCourse = courseService.updateCourse(courseDTO, id);
+                ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course updated successfully", updatedCourse);
+                return ResponseEntity.ok(response);
+            } else {
+                ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "Course not found", null);
+                return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<ResponseWrapper<CourseDTO>> getCourseById(@PathVariable Long id) {
-        Optional<CourseDTO> courseDTO = courseService.getCourseById(id);
-        if (courseDTO.isPresent()) {
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course fetched successfully", courseDTO.get());
-            return ResponseEntity.ok(response);
-        } else {
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "Course not found", null);
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        try {
+            Optional<CourseDTO> courseDTO = courseService.getCourseById(id);
+            if (courseDTO.isPresent()) {
+                ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course fetched successfully", courseDTO.get());
+                return ResponseEntity.ok(response);
+            } else {
+                ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "Course not found", null);
+                return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @GetMapping
     public ResponseEntity<ResponseWrapper<List<CourseDTO>>> getAllCourses() {
-        List<CourseDTO> courses = courseService.getAllCourses();
-        ResponseWrapper<List<CourseDTO>> response = new ResponseWrapper<>("success", "Courses fetched successfully", courses);
-        return ResponseEntity.ok(response);
+        try {
+            List<CourseDTO> courses = courseService.getAllCourses();
+            ResponseWrapper<List<CourseDTO>> response = new ResponseWrapper<>("success", "Courses fetched successfully", courses);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            ResponseWrapper<List<CourseDTO>> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<ResponseWrapper<String>> deleteCourse(@PathVariable Long id) {
-        Optional<CourseDTO> courseDTO = courseService.getCourseById(id);
-        if (courseDTO.isPresent()) {
-            courseService.deleteCourse(id);
-            ResponseWrapper<String> response = new ResponseWrapper<>("success", "Course deleted successfully", null);
-            return new ResponseEntity<>(response, HttpStatus.OK);
-        } else {
-            ResponseWrapper<String> response = new ResponseWrapper<>("fail", "Course not found", null);
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        try {
+            Optional<CourseDTO> courseDTO = courseService.getCourseById(id);
+            if (courseDTO.isPresent()) {
+                courseService.deleteCourse(id);
+                ResponseWrapper<String> response = new ResponseWrapper<>("success", "Course deleted successfully", null);
+                return new ResponseEntity<>(response, HttpStatus.OK);
+            } else {
+                ResponseWrapper<String> response = new ResponseWrapper<>("fail", "Course not found", null);
+                return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            ResponseWrapper<String> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
