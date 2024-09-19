@@ -53,7 +53,7 @@ public class Student implements UserDetails {
     private Date updatedAt;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "department_id", nullable = false)
+    @JoinColumn(name = "department_id", nullable = true)
     @JsonBackReference // to avoid infinite loop
     private Department department;
 
