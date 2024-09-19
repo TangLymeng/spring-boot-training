@@ -20,14 +20,9 @@ public class CourseController {
 
     @PostMapping
     public ResponseEntity<ResponseWrapper<CourseDTO>> createCourse(@RequestBody CourseDTO courseDTO) {
-        try {
-            CourseDTO savedCourse = courseService.saveCourse(courseDTO);
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course created successfully", savedCourse);
-            return new ResponseEntity<>(response, HttpStatus.CREATED);
-        } catch (Exception e) {
-            ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("fail", "An unexpected error occurred", null);
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+        CourseDTO savedCourse = courseService.saveCourse(courseDTO);
+        ResponseWrapper<CourseDTO> response = new ResponseWrapper<>("success", "Course created successfully", savedCourse);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
